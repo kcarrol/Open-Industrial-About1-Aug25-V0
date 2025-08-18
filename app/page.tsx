@@ -51,10 +51,7 @@ export default function AboutPage() {
             Unified, Queryable, Actionable.
           </h1>
           <p className="text-xl text-slate-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Open Industrial is an Azure-powered telemetry hub built for operational technology (OT) environments. It
-            ingests data from control systems, manufacturing execution systems, lab tools, historians, and IoT devices —
-            making it instantly queryable via natural language and APIs, and ready for integration into analytics,
-            intelligent agents, and automation workflows.
+            Open Industrial is an Azure-powered telemetry hub for operational technology (OT). It ingests data from control systems, MES, lab tools, historians, and IoT devices — making it instantly queryable in natural language or APIs, and ready for integration into analytics, agents, and automation workflows.
           </p>
         </div>
       </section>
@@ -68,8 +65,7 @@ export default function AboutPage() {
             </div>
             <h2 className="text-4xl font-bold text-white mb-6">Our Mission</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              To help industrial teams break down data silos, access insights faster, and coordinate actions across the
-              systems that keep their operations running.
+              To help industrial teams unify data across systems, access insights without delay, and streamline coordination across the platforms that power their operations.
             </p>
           </div>
         </div>
@@ -94,7 +90,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">Connect industrial systems</h3>
                 <p className="text-slate-300 leading-relaxed">
-                  DCS, SCADA, PLCs, MES, ERP, WMS, LIMS, QMS, historians, and sensors.
+                  Unify data from control, execution, lab, and sensor systems into one queryable hub.
                 </p>
               </CardContent>
             </Card>
@@ -106,7 +102,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">Query naturally</h3>
                 <p className="text-slate-300 leading-relaxed">
-                  Use Azi to ask questions in plain English; get back accurate, explainable answers in seconds.
+                  Ask questions in plain English and get explainable answers instantly.
                 </p>
               </CardContent>
             </Card>
@@ -118,7 +114,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">Integrate anywhere</h3>
                 <p className="text-slate-300 leading-relaxed">
-                  Power BI dashboards, maintenance agents, reporting tools, and existing automation systems.
+                  Plug results into dashboards, agents, and automation systems.
                 </p>
               </CardContent>
             </Card>
@@ -130,7 +126,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">Secure and governed</h3>
                 <p className="text-slate-300 leading-relaxed">
-                  Full auditability, role-based access, and schema enforcement for data integrity.
+                  Ensure integrity with audit trails, role-based access, and schema enforcement.
                 </p>
               </CardContent>
             </Card>
@@ -157,21 +153,21 @@ export default function AboutPage() {
             <Card className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
               <CardContent className="p-6 text-center">
                 <h3 className="text-lg font-semibold text-white mb-2">Manufacturing</h3>
-                <p className="text-slate-400 text-sm">Production lines, quality control, equipment monitoring</p>
+                <p className="text-slate-400 text-sm">Unify production line, equipment, and control data to reduce downtime and boost efficiency.</p>
               </CardContent>
             </Card>
 
             <Card className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
               <CardContent className="p-6 text-center">
                 <h3 className="text-lg font-semibold text-white mb-2">Life Sciences</h3>
-                <p className="text-slate-400 text-sm">Lab instruments, research data, process validation</p>
+                <p className="text-slate-400 text-sm">Govern lab and research telemetry to accelerate validation, trials, and compliance.</p>
               </CardContent>
             </Card>
 
             <Card className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
               <CardContent className="p-6 text-center">
                 <h3 className="text-lg font-semibold text-white mb-2">Energy</h3>
-                <p className="text-slate-400 text-sm">Grid monitoring, renewable integration, consumption analytics</p>
+                <p className="text-slate-400 text-sm">Balance supply and demand with live grid monitoring, renewable integration, and analytics.</p>
               </CardContent>
             </Card>
 
@@ -179,7 +175,7 @@ export default function AboutPage() {
               <CardContent className="p-6 text-center">
                 <h3 className="text-lg font-semibold text-white mb-2">Utilities</h3>
                 <p className="text-slate-400 text-sm">
-                  Infrastructure monitoring, water systems, environmental sensors
+                  Monitor water, infrastructure, and environmental systems with real-time visibility.
                 </p>
               </CardContent>
             </Card>
@@ -187,14 +183,14 @@ export default function AboutPage() {
             <Card className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
               <CardContent className="p-6 text-center">
                 <h3 className="text-lg font-semibold text-white mb-2">Process Industries</h3>
-                <p className="text-slate-400 text-sm">Chemical plants, refineries, continuous manufacturing</p>
+                <p className="text-slate-400 text-sm">Optimize chemical, refining, and continuous manufacturing with integrated operational data.</p>
               </CardContent>
             </Card>
 
             <Card className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
               <CardContent className="p-6 text-center">
                 <h3 className="text-lg font-semibold text-white mb-2">Industrial IT</h3>
-                <p className="text-slate-400 text-sm">OT/IT convergence, system integration, data governance</p>
+                <p className="text-slate-400 text-sm">Bridge OT/IT convergence with secure integration, governance, and system oversight.</p>
               </CardContent>
             </Card>
           </div>
@@ -210,9 +206,7 @@ export default function AboutPage() {
             </div>
             <h2 className="text-4xl font-bold text-white mb-6">Our Vision</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              Industrial data should move at the speed of operations. Open Industrial is designed to be the bridge
-              between legacy OT systems and the modern, intelligent workflows that will define the next generation of
-              manufacturing, research, and infrastructure.
+              Industrial data should work as hard as the operations it supports. Open Industrial unifies legacy OT systems with modern tools, giving teams a trusted way to access insights, coordinate workflows, and act with confidence.
             </p>
           </div>
 
@@ -221,15 +215,14 @@ export default function AboutPage() {
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-white mb-4">The Future of Industrial Intelligence</h3>
                 <p className="text-lg text-white mb-6 leading-relaxed">
-                  Every industrial system connected. Every operational question answered instantly. Every insight
-                  transformed into intelligent action. Open Industrial makes this vision reality.
+                  Connect your systems. Ask questions in plain English. Act on insights with confidence.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button
                     size="lg"
                     className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3"
                   >
-                    Join Our Mission
+                    Get Started
                   </Button>
                   <Button
                     size="lg"
