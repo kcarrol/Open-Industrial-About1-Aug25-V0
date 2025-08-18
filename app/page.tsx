@@ -88,7 +88,7 @@ export default function AboutPage() {
                 <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mb-6">
                   <Zap className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">Connect industrial systems</h3>
+                <h3 className="text-xl font-bold text-white mb-4">Connect Industrial Systems</h3>
                 <p className="text-slate-300 leading-relaxed">
                   Unify data from control, execution, lab, and sensor systems into one queryable hub.
                 </p>
@@ -100,7 +100,7 @@ export default function AboutPage() {
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-6">
                   <MessageSquare className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">Query naturally</h3>
+                <h3 className="text-xl font-bold text-white mb-4">Query Naturally</h3>
                 <p className="text-slate-300 leading-relaxed">
                   Ask questions in plain English and get explainable answers instantly.
                 </p>
@@ -112,7 +112,7 @@ export default function AboutPage() {
                 <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                   <Workflow className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">Integrate anywhere</h3>
+                <h3 className="text-xl font-bold text-white mb-4">Integrate Anywhere</h3>
                 <p className="text-slate-300 leading-relaxed">
                   Plug results into dashboards, agents, and automation systems.
                 </p>
@@ -124,7 +124,7 @@ export default function AboutPage() {
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mb-6">
                   <Shield className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">Secure and governed</h3>
+                <h3 className="text-xl font-bold text-white mb-4">Secure and Govern</h3>
                 <p className="text-slate-300 leading-relaxed">
                   Ensure integrity with audit trails, role-based access, and schema enforcement.
                 </p>
