@@ -65,7 +65,7 @@ export default function AboutPage() {
             </div>
             <h2 className="text-4xl font-bold text-white mb-6">Our Mission</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              To help industrial teams unify data across systems, access insights without delay, and streamline coordination across the platforms that power their operations.
+              To help industrial teams unify data across systems, access insights without delay, and coordinate actions across the systems that keep operations running.
             </p>
           </div>
         </div>
@@ -126,7 +126,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">Secure and Govern</h3>
                 <p className="text-slate-300 leading-relaxed">
-                  Ensure integrity with audit trails, role-based access, and schema enforcement.
+                  Ensure trust with audit trails, role-based access, and schema enforcement.
                 </p>
               </CardContent>
             </Card>
@@ -206,7 +206,7 @@ export default function AboutPage() {
             </div>
             <h2 className="text-4xl font-bold text-white mb-6">Our Vision</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              Industrial data should work as hard as the operations it supports. Open Industrial unifies legacy OT systems with modern tools, giving teams a trusted way to access insights, coordinate workflows, and act with confidence.
+              Industrial data should work as hard as the operations it supports. Open Industrial unifies legacy OT systems with modern tools, giving teams a trusted way to access insights, co-ordinate workflows, and act with confidence.
             </p>
           </div>
 
