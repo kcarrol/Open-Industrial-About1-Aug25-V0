@@ -29,6 +29,9 @@ export default function AboutPage() {
             <a href="#vision" className="text-slate-300 hover:text-white transition-colors">
               Vision
             </a>
+            <a href="/contact" className="text-slate-300 hover:text-white transition-colors">
+              Contact
+            </a>
             <Button
               variant="outline"
               className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white bg-transparent"
@@ -51,7 +54,9 @@ export default function AboutPage() {
             Unified, Queryable, Actionable.
           </h1>
           <p className="text-xl text-slate-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Open Industrial is an Azure-powered telemetry hub for operational technology (OT). It ingests data from control systems, MES, lab tools, historians, and IoT devices — making it instantly queryable in natural language or APIs, and ready for integration into analytics, agents, and automation workflows.
+            Open Industrial is an Azure-powered telemetry hub for operational technology (OT). It ingests data from
+            control systems, MES, lab tools, historians, and IoT devices — making it instantly queryable in natural
+            language or APIs, and ready for integration into analytics, agents, and automation workflows.
           </p>
         </div>
       </section>
@@ -65,7 +70,8 @@ export default function AboutPage() {
             </div>
             <h2 className="text-4xl font-bold text-white mb-6">Our Mission</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              To help industrial teams unify data across systems, access insights without delay, and coordinate actions across the systems that keep operations running.
+              To help industrial teams unify data across systems, access insights without delay, and coordinate actions
+              across the systems that keep operations running.
             </p>
           </div>
         </div>
@@ -153,21 +159,27 @@ export default function AboutPage() {
             <Card className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
               <CardContent className="p-6 text-center">
                 <h3 className="text-lg font-semibold text-white mb-2">Manufacturing</h3>
-                <p className="text-slate-400 text-sm">Unify production line, equipment, and control data to reduce downtime and boost efficiency.</p>
+                <p className="text-slate-400 text-sm">
+                  Unify production line, equipment, and control data to reduce downtime and boost efficiency.
+                </p>
               </CardContent>
             </Card>
 
             <Card className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
               <CardContent className="p-6 text-center">
                 <h3 className="text-lg font-semibold text-white mb-2">Life Sciences</h3>
-                <p className="text-slate-400 text-sm">Govern lab and research telemetry to accelerate validation, trials, and compliance.</p>
+                <p className="text-slate-400 text-sm">
+                  Govern lab and research telemetry to accelerate validation, trials, and compliance.
+                </p>
               </CardContent>
             </Card>
 
             <Card className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
               <CardContent className="p-6 text-center">
                 <h3 className="text-lg font-semibold text-white mb-2">Energy</h3>
-                <p className="text-slate-400 text-sm">Balance supply and demand with live grid monitoring, renewable integration, and analytics.</p>
+                <p className="text-slate-400 text-sm">
+                  Balance supply and demand with live grid monitoring, renewable integration, and analytics.
+                </p>
               </CardContent>
             </Card>
 
@@ -183,14 +195,18 @@ export default function AboutPage() {
             <Card className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
               <CardContent className="p-6 text-center">
                 <h3 className="text-lg font-semibold text-white mb-2">Process Industries</h3>
-                <p className="text-slate-400 text-sm">Optimize chemical, refining, and continuous manufacturing with integrated operational data.</p>
+                <p className="text-slate-400 text-sm">
+                  Optimize chemical, refining, and continuous manufacturing with integrated operational data.
+                </p>
               </CardContent>
             </Card>
 
             <Card className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
               <CardContent className="p-6 text-center">
                 <h3 className="text-lg font-semibold text-white mb-2">Industrial IT</h3>
-                <p className="text-slate-400 text-sm">Bridge OT/IT convergence with secure integration, governance, and system oversight.</p>
+                <p className="text-slate-400 text-sm">
+                  Bridge OT/IT convergence with secure integration, governance, and system oversight.
+                </p>
               </CardContent>
             </Card>
           </div>
@@ -206,7 +222,9 @@ export default function AboutPage() {
             </div>
             <h2 className="text-4xl font-bold text-white mb-6">Our Vision</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              Industrial data should work as hard as the operations it supports. Open Industrial unifies legacy OT systems with modern tools, giving teams a trusted way to access insights, co-ordinate workflows, and act with confidence.
+              Industrial data should work as hard as the operations it supports. Open Industrial unifies legacy OT
+              systems with modern tools, giving teams a trusted way to access insights, co-ordinate workflows, and act
+              with confidence.
             </p>
           </div>
 
@@ -258,7 +276,7 @@ export default function AboutPage() {
               <a href="#" className="text-slate-400 hover:text-white transition-colors">
                 Terms
               </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              <a href="/contact" className="text-slate-400 hover:text-white transition-colors">
                 Contact
               </a>
             </div>
