@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { MessageSquare } from "lucide-react"
 import Image from "next/image"
-import Script from "next/script"
+import HubSpotForm from "@/components/hubspot-form"
 
 export default function ContactPage() {
   return (
@@ -72,10 +72,7 @@ export default function ContactPage() {
 
             <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
               <CardContent className="p-8">
-                {/* HubSpot Form Container */}
-                <div id="hubspot-form" className="min-h-[400px]">
-                  {/* Form will be injected here by HubSpot script */}
-                </div>
+                <HubSpotForm />
               </CardContent>
             </Card>
           </div>
@@ -144,24 +141,6 @@ export default function ContactPage() {
           </div>
         </div>
       </footer>
-
-      {/* HubSpot Form Script */}
-      <Script
-        src="//js.hsforms.net/forms/embed/v2.js"
-        strategy="afterInteractive"
-        onLoad={() => {
-          // @ts-ignore
-          if (window.hbspt) {
-            // @ts-ignore
-            window.hbspt.forms.create({
-              portalId: "2687377",
-              formId: "c469e188-69b9-4165-b524-62c5a33b834c",
-              region: "na1",
-              target: "#hubspot-form",
-            })
-          }
-        }}
-      />
     </div>
   )
 }
