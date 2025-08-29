@@ -64,8 +64,7 @@ export default function ContactPage() {
               </div>
               <h2 className="text-4xl font-bold text-white mb-6">Get In Touch</h2>
               <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-                Ready to transform your industrial data operations? Fill out the form below and our team will get back
-                to you within 24 hours.
+                Ready to transform your industrial data operations? Fill out the form below and our team will soon get back to you.
               </p>
             </div>
             <Card className="bg-slate-800/50 border-slate-700">
@@ -83,7 +82,7 @@ export default function ContactPage() {
           <div className="max-w-4xl mx-auto">
             <Card className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-600/50 backdrop-blur-sm">
               <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-white mb-4">Ready to Get Started?</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Let's Get Started</h3>
                 <p className="text-lg text-white mb-6 leading-relaxed">
                   Join industrial teams who trust Open Industrial to unify their operational data and drive actionable
                   insights.
