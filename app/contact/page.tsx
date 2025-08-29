@@ -49,8 +49,7 @@ export default function ContactPage() {
             Your Industrial Data Journey
           </h1>
           <p className="text-xl text-slate-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Ready to unify your industrial data and unlock actionable insights? Get in touch with our team to discuss
-            how Open Industrial can transform your operations.
+            Get in touch to see how Open Industrial unifies your OT systems and delivers insights you can trust.
           </p>
         </div>
       </section>
@@ -66,11 +65,7 @@ export default function ContactPage() {
               <h2 className="text-4xl font-bold text-white mb-6">Get In Touch</h2>
               <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
                 Ready to transform your industrial data operations? Fill out the form below and our team will get back
-                to you within 24 hours.
-              </p>
-            </div>
-
-            <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
+                Fill out the form below and our team will get back to you within 24 hours.>
               <CardContent className="p-8">
                 <HubSpotForm />
               </CardContent>
@@ -95,11 +90,7 @@ export default function ContactPage() {
                     size="lg"
                     className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3"
                   >
-                    Schedule Demo
-                  </Button>
-                  <Button
-                    size="lg"
-                    variant="outline"
+                  See Open Industrial in action — schedule a demo today."outline"
                     className="border-slate-600 text-slate-300 hover:bg-slate-800 px-8 py-3 bg-transparent"
                   >
                     View Documentation
