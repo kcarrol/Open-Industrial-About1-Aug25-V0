@@ -29,6 +29,9 @@ export default function AboutPage() {
             <a href="#vision" className="text-slate-300 hover:text-white transition-colors">
               Vision
             </a>
+            <a href="/use-case/batch-quality" className="text-slate-300 hover:text-white transition-colors">
+              Use Cases
+            </a>
             <a href="/contact" className="text-slate-300 hover:text-white transition-colors">
               Contact
             </a>
