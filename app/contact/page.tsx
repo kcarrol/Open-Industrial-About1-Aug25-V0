@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Mail, Phone, MapPin, MessageSquare } from "lucide-react"
+import { MessageSquare } from "lucide-react"
 import Image from "next/image"
 import Script from "next/script"
 
@@ -52,43 +52,6 @@ export default function ContactPage() {
             Ready to unify your industrial data and unlock actionable insights? Get in touch with our team to discuss
             how Open Industrial can transform your operations.
           </p>
-        </div>
-      </section>
-
-      {/* Contact Information */}
-      <section className="py-20 px-4 bg-slate-800/30">
-        <div className="container mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
-              <CardContent className="p-8 text-center">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Mail className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-4">Email Us</h3>
-                <p className="text-slate-300">hello@openindustrial.com</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
-              <CardContent className="p-8 text-center">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Phone className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-4">Call Us</h3>
-                <p className="text-slate-300">+1 (555) 123-4567</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
-              <CardContent className="p-8 text-center">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-4">Visit Us</h3>
-                <p className="text-slate-300">San Francisco, CA</p>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </section>
 
