@@ -24,7 +24,10 @@ export default function ContactPage() {
             <a href="/" className="text-slate-300 hover:text-white transition-colors">
               About
             </a>
-            <a href="#contact-form" className="text-slate-300 hover:text-white transition-colors">
+            <a href="/use-case/batch-quality" className="text-slate-300 hover:text-white transition-colors">
+              Use Cases
+            </a>
+            <a href="/contact" className="text-white font-medium">
               Contact
             </a>
             <Button
@@ -64,7 +67,8 @@ export default function ContactPage() {
               </div>
               <h2 className="text-4xl font-bold text-white mb-6">Get In Touch</h2>
               <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-                Ready to transform your industrial data operations? Fill out the form below and our team will soon get back to you.
+                Ready to transform your industrial data operations? Fill out the form below and our team will soon get
+                back to you.
               </p>
             </div>
             <Card className="bg-slate-800/50 border-slate-700">

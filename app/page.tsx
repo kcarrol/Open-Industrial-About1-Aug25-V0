@@ -20,14 +20,8 @@ export default function AboutPage() {
             />
           </div>
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#mission" className="text-slate-300 hover:text-white transition-colors">
-              Mission
-            </a>
-            <a href="#what-we-do" className="text-slate-300 hover:text-white transition-colors">
-              What We Do
-            </a>
-            <a href="#vision" className="text-slate-300 hover:text-white transition-colors">
-              Vision
+            <a href="/" className="text-white font-medium">
+              About
             </a>
             <a href="/use-case/batch-quality" className="text-slate-300 hover:text-white transition-colors">
               Use Cases
