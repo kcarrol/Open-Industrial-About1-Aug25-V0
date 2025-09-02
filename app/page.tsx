@@ -5,7 +5,7 @@ import {
   AppWindowIcon,
   KeyIcon,
   ShieldIcon,
-  BetweenHorizontalStartIcon,
+  LucideGripHorizontalIcon,
   ZapIcon,
   SearchCheckIcon,
   UploadCloudIcon,
@@ -34,14 +34,17 @@ export default function HomePage() {
             />
           </div>
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#how-it-works" className="text-slate-300 hover:text-white transition-colors">
-              How It Works
+            <a href="/" className="text-white font-medium">
+              Home
             </a>
-            <a href="#features" className="text-slate-300 hover:text-white transition-colors">
-              Features
+            <a href="/about" className="text-slate-300 hover:text-white transition-colors">
+              About
             </a>
-            <a href="#integration" className="text-slate-300 hover:text-white transition-colors">
-              Integration
+            <a href="/use-case/batch-quality" className="text-slate-300 hover:text-white transition-colors">
+              Use Cases
+            </a>
+            <a href="/contact" className="text-slate-300 hover:text-white transition-colors">
+              Contact
             </a>
             <Button
               variant="outline"
@@ -65,7 +68,7 @@ export default function HomePage() {
               get answers instantly
             </span>
           </h1>
-          <p className="text-lg text-slate-400 mb-8 max-w-3xl mx-auto leading-relaxed italic">
+          <p className="text-lg text-slate-400 mb-8 max-w-3xl mx-auto leading-relaxed">
             {
               "Connect industrial systems. Stream telemetry. Ask questions in plain English. Share insights anywhere — no pipelines, no delay."
             }
@@ -230,9 +233,9 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
             <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
-              <CardContent className="p-8">
+              <CardContent className="p-6 lg:p-8">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-6">
                   <span className="text-white font-bold">1</span>
                 </div>
@@ -250,7 +253,7 @@ export default function HomePage() {
             </Card>
 
             <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
-              <CardContent className="p-8">
+              <CardContent className="p-6 lg:p-8">
                 <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mb-6">
                   <span className="text-white font-bold">2</span>
                 </div>
@@ -268,7 +271,7 @@ export default function HomePage() {
             </Card>
 
             <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
-              <CardContent className="p-8">
+              <CardContent className="p-6 lg:p-8">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mb-6">
                   <span className="text-white font-bold">3</span>
                 </div>
@@ -286,7 +289,7 @@ export default function HomePage() {
             </Card>
 
             <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
-              <CardContent className="p-8">
+              <CardContent className="p-6 lg:p-8">
                 <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                   <span className="text-white font-bold">4</span>
                 </div>
@@ -358,7 +361,7 @@ export default function HomePage() {
 
             <Card className="bg-slate-900/50 border-slate-700">
               <CardContent className="p-6 text-center">
-                <BetweenHorizontalStartIcon className="w-12 h-12 text-purple-400 mx-auto mb-4" />
+              LucideGripHorizontalIconconalIcon className="w-12 h-12 text-purple-400 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold text-white mb-4">Systems</h3>
                 <div className="space-y-2">
                   <Badge variant="outline" className="border-slate-600 text-slate-300">
@@ -485,7 +488,7 @@ export default function HomePage() {
                     />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">Open Industrial</h3>
-                  <p className="text-blue-400 font-semibold mb-4">AI-Powered Hub</p>
+                  <p className="font-semibold mb-4 text-white">AI-Powered Hub</p>
                   <div className="text-sm text-slate-300 space-y-1">
                     <p>• Real-time ingestion</p>
                     <p>• Natural language queries</p>
@@ -580,7 +583,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 justify-items-center">
             <div className="flex items-start space-x-4">
               <KeyIcon className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
               <p className="text-slate-300">Your data, your access policies</p>
@@ -632,7 +635,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="text-center">
+            <div className="text-center bg-transparent">
               <Card className="bg-slate-900/50 border-slate-700 inline-block">
                 <CardContent className="p-6">
                   <p className="text-lg text-white font-medium">
