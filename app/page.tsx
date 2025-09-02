@@ -1,10 +1,24 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Target, Users, Eye, Zap, MessageSquare, Shield, Workflow } from "lucide-react"
+import {
+  AppWindowIcon,
+  KeyIcon,
+  ShieldIcon,
+  BetweenHorizontalStartIcon,
+  ZapIcon,
+  SearchCheckIcon,
+  UploadCloudIcon,
+  CheckCircle,
+  MessageSquare,
+  Share2,
+  Zap,
+  CheckCircleIcon,
+  Shield,
+} from "lucide-react"
 import Image from "next/image"
 
-export default function AboutPage() {
+export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       {/* Header */}
@@ -20,14 +34,14 @@ export default function AboutPage() {
             />
           </div>
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="/" className="text-white font-medium">
-              About
+            <a href="#how-it-works" className="text-slate-300 hover:text-white transition-colors">
+              How It Works
             </a>
-            <a href="/use-case/batch-quality" className="text-slate-300 hover:text-white transition-colors">
-              Use Cases
+            <a href="#features" className="text-slate-300 hover:text-white transition-colors">
+              Features
             </a>
-            <a href="/contact" className="text-slate-300 hover:text-white transition-colors">
-              Contact
+            <a href="#integration" className="text-slate-300 hover:text-white transition-colors">
+              Integration
             </a>
             <Button
               variant="outline"
@@ -42,82 +56,213 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto text-center">
-          <Badge className="mb-6 bg-blue-500/10 text-blue-400 border-blue-500/20">About Open Industrial</Badge>
+          <Badge className="mb-6 bg-blue-500/10 text-blue-400 border-blue-500/20">
+            AI-Powered Industrial Intelligence
+          </Badge>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            Ask anything about your plant – <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-              Your Industrial Data.
+              get answers instantly
             </span>
-            <br />
-            Unified, Queryable, Actionable.
           </h1>
-          <p className="text-xl text-slate-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Open Industrial is an Azure-powered telemetry hub for operational technology (OT). It ingests data from
-            control systems, MES, lab tools, historians, and IoT devices — making it instantly queryable in natural
-            language or APIs, and ready for integration into analytics, agents, and automation workflows.
+          <p className="text-lg text-slate-400 mb-8 max-w-3xl mx-auto leading-relaxed italic">
+            {
+              "Connect industrial systems. Stream telemetry. Ask questions in plain English. Share insights anywhere — no pipelines, no delay."
+            }
           </p>
-        </div>
-      </section>
-
-      {/* Mission Section */}
-      <section id="mission" className="py-20 px-4 bg-slate-800/30">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Target className="w-8 h-8 text-white" />
-            </div>
-            <h2 className="text-4xl font-bold text-white mb-6">Our Mission</h2>
-            <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              To help industrial teams unify data across systems, access insights without delay, and coordinate actions
-              across the systems that keep operations running.
-            </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3"
+            >
+              Get Started
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-slate-600 text-slate-300 hover:bg-slate-800 px-8 py-3 bg-transparent"
+            >
+              Learn More
+            </Button>
           </div>
         </div>
       </section>
 
-      {/* What We Do Section */}
-      <section id="what-we-do" className="py-20 px-4">
+      {/* Product Screenshot */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="max-w-6xl mx-auto">
+            <Card className="bg-slate-800/50 border-slate-700 overflow-hidden">
+              <CardContent className="p-8">
+                <Image
+                  src="/azi-industrial-dashboard.png"
+                  alt="Azi Industrial Monitoring Interface - Real-time plant data visualization with AI insights"
+                  width={1200}
+                  height={600}
+                  className="w-full h-auto rounded-lg"
+                />
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Value Proposition */}
+      <section className="py-20 px-4 bg-slate-800/30">
+        <div className="container mx-auto text-center">
+          <h2 className="text-4xl font-bold text-white mb-6">Connect Your Data. Ask Anything. Share Anywhere.</h2>
+          <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
+            Open Industrial ingests live telemetry from DCS, SCADA, MES, historians, and lab systems — making it
+            instantly queryable through natural language, APIs, and dashboards.
+          </p>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section id="how-it-works" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">What We Do</h2>
-            <p className="text-lg text-slate-300 max-w-3xl mx-auto">
-              Open Industrial transforms how organizations interact with their industrial data through four core
-              capabilities.
+            <h2 className="text-4xl font-bold text-white mb-4">How It Works</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <UploadCloudIcon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">1. Connect Your Data</h3>
+                <p className="text-slate-300 leading-relaxed">
+                  Ingest and stream telemetry via OPC UA, MQTT, HTTP, SQL, or CSV.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <MessageSquare className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">2. Ask Azi</h3>
+                <p className="text-slate-300 leading-relaxed">
+                  Query your plant's data in plain English. Azi translates your intent into KQL and returns explainable,
+                  actionable results.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Share2 className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">3. Share & Integrate</h3>
+                <p className="text-slate-300 leading-relaxed">
+                  Save queries as API endpoints to plug into dashboards, reports, apps and workflows.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet Azi */}
+      <section className="py-20 px-4 bg-slate-800/30">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-6">Meet Azi — Your AI Query Assistant</h2>
+            <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
+              Azi gives engineers direct access to live plant insights — no scripts, no SQL, no waiting on IT or vendor
+              support.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <Card className="bg-slate-900/50 border-slate-700">
+              <CardContent className="p-6">
+                <MessageSquare className="w-8 h-8 mb-4 text-purple-400" />
+                <p className="text-slate-300 italic">"Show flow anomalies for Line 4 over the past 24 hours"</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-slate-900/50 border-slate-700">
+              <CardContent className="p-6">
+                <MessageSquare className="w-8 h-8 text-purple-400 mb-4" />
+                <p className="text-slate-300 italic">"Compare batch temperatures for Reactor 2"</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-slate-900/50 border-slate-700">
+              <CardContent className="p-6">
+                <MessageSquare className="w-8 h-8 mb-4 text-purple-400" />
+                <p className="text-slate-300 italic">"List top causes of downtime last week"</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <CheckCircle className="w-12 h-12 text-green-400 mx-auto mb-4" />
+              <p className="text-slate-300">Built for real-time telemetry</p>
+            </div>
+            <div className="text-center">
+              <CheckCircleIcon className="w-12 h-12 mx-auto mb-4 text-green-400" />
+              <p className="text-slate-300">
+                Translates questions into KQL — Microsoft's query language for exploring and analyzing telemetry data
+              </p>
+            </div>
+            <div className="text-center">
+              <CheckCircle className="w-12 h-12 text-green-400 mx-auto mb-4" />
+              <p className="text-slate-300">Explains every query and its results</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Turn Industrial Data Into Trusted Insight */}
+      <section id="features" className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-6">Turn Industrial Data Into Trusted Insight</h2>
+            <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
+              Break down data silos across OT and IT systems by turning live plant data into actionable, audit-ready
+              insight your teams can act on.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
               <CardContent className="p-8">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mb-6">
-                  <Zap className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-4">Connect Industrial Systems</h3>
-                <p className="text-slate-300 leading-relaxed">
-                  Unify data from control, execution, lab, and sensor systems into one queryable hub.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
-              <CardContent className="p-8">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-6">
-                  <MessageSquare className="w-6 h-6 text-white" />
+                  <span className="text-white font-bold">1</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">Query Naturally</h3>
+                <h3 className="text-xl font-bold text-white mb-4">Downtime Diagnosis & Root Cause</h3>
+                <div className="mb-4">
+                  <Badge className="bg-blue-500/10 text-blue-400 border-blue-500/20 mb-2">
+                    "What caused Line 4 downtime for the past 24 hours?"
+                  </Badge>
+                </div>
                 <p className="text-slate-300 leading-relaxed">
-                  Ask questions in plain English and get explainable answers instantly.
+                  Unify SCADA, historian, and PLCs data to diagnose downtime faster. Get clear answers with context —
+                  from codes, timing, and trends — without waiting on vendor support or manual analysis.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
               <CardContent className="p-8">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mb-6">
-                  <Workflow className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mb-6">
+                  <span className="text-white font-bold">2</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">Integrate Anywhere</h3>
+                <h3 className="text-xl font-bold text-white mb-4">Batch Quality & Compliance</h3>
+                <div className="mb-4">
+                  <Badge className="bg-green-500/10 text-green-400 border-green-500/20 mb-2">
+                    "Which Reactor 2 batches had temp &gt;140°C this week?"
+                  </Badge>
+                </div>
                 <p className="text-slate-300 leading-relaxed">
-                  Plug results into dashboards, agents, and automation systems.
+                  Instantly track and batch across MES, LIMS, and historian data with repeatable, audit-ready queries.
+                  Compare the results with expected parameters to document investigations and accelerate investigations.
                 </p>
               </CardContent>
             </Card>
@@ -125,11 +270,35 @@ export default function AboutPage() {
             <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
               <CardContent className="p-8">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mb-6">
-                  <Shield className="w-6 h-6 text-white" />
+                  <span className="text-white font-bold">3</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">Secure and Govern</h3>
+                <h3 className="text-xl font-bold text-white mb-4">Cross-Line Performance Reporting</h3>
+                <div className="mb-4">
+                  <Badge className="bg-purple-500/10 text-purple-400 border-purple-500/20 mb-2">
+                    "Show throughput and top 3 downtime causes for Line 4 today."
+                  </Badge>
+                </div>
                 <p className="text-slate-300 leading-relaxed">
-                  Ensure trust with audit trails, role-based access, and schema enforcement.
+                  Generate consistent OEE, yield, and downtime reports across shifts and lines — governed by your plant
+                  context, free from spreadsheets and a manual error.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
+              <CardContent className="p-8">
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mb-6">
+                  <span className="text-white font-bold">4</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">Safety & Compliance Triggers</h3>
+                <div className="mb-4">
+                  <Badge className="bg-orange-500/10 text-orange-400 border-orange-500/20 mb-2">
+                    "Log all pressure events &gt;80psi with full context."
+                  </Badge>
+                </div>
+                <p className="text-slate-300 leading-relaxed">
+                  Set rules on safety telemetry and capture incidents with complete historian and SCADA context. Every
+                  event logged is a governed, auditable trail to simplify compliance reviews.
                 </p>
               </CardContent>
             </Card>
@@ -137,118 +306,366 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Who We Serve Section */}
+      {/* Integration */}
+      <section id="integration" className="py-20 px-4 bg-slate-800/30">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-6">Works with Your Existing Stack</h2>
+            <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
+              Connect seamlessly to your current industrial systems.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8 mb-12">
+            <Card className="bg-slate-900/50 border-slate-700">
+              <CardContent className="p-6 text-center">
+                <UploadCloudIcon className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-white mb-4">Protocols</h3>
+                <div className="space-y-2">
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    OPC UA
+                  </Badge>
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    MQTT
+                  </Badge>
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    REST
+                  </Badge>
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    SQL
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-slate-900/50 border-slate-700">
+              <CardContent className="p-6 text-center">
+                <Shield className="w-12 h-12 text-green-400 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-white mb-4">Middleware</h3>
+                <div className="space-y-2">
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    HighByte
+                  </Badge>
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    HiveMQ
+                  </Badge>
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    Ignition
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-slate-900/50 border-slate-700">
+              <CardContent className="p-6 text-center">
+                <BetweenHorizontalStartIcon className="w-12 h-12 text-purple-400 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-white mb-4">Systems</h3>
+                <div className="space-y-2">
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    DCS
+                  </Badge>
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    MES
+                  </Badge>
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    SCADA
+                  </Badge>
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    LIMS
+                  </Badge>
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    DeltaV
+                  </Badge>
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    Syncade
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-slate-900/50 border-slate-700">
+              <CardContent className="p-6 text-center">
+                <AppWindowIcon className="w-12 h-12 text-orange-400 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-white mb-4">Apps</h3>
+                <div className="space-y-2">
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    Mobius Suite
+                  </Badge>
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    ProofCheck™
+                  </Badge>
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    AlertTrack+
+                  </Badge>
+                  <Badge variant="outline" className="border-slate-600 text-slate-300">
+                    QuickView+
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <div className="inline-flex items-center space-x-4 bg-slate-900/50 rounded-lg p-6 border border-slate-700">
+              <span className="text-slate-300">All systems</span>
+              <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+              <span className="text-white font-semibold">Open Industrial</span>
+              <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+              <span className="text-slate-300">Instant insights</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Systems Flow Diagram */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-6">{"Data In > Insight Out"}</h2>
+            <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
+              The unified intelligence hub for your industrial ecosystem.
+            </p>
+          </div>
+
+          {/* Flow Diagram */}
+          <div className="max-w-6xl mx-auto">
+            {/* Input Systems */}
+            <div className="mb-8">
+              <h3 className="text-lg font-semibold text-white mb-6 text-center">Input Systems</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <Card className="bg-slate-800/50 border-slate-700">
+                  <CardContent className="p-4 text-center">
+                    <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg mx-auto mb-2"></div>
+                    <h4 className="text-sm font-semibold text-white mb-1">Control Systems</h4>
+                    <p className="text-xs text-slate-400">DCS, SCADA, PLC</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-slate-800/50 border-slate-700">
+                  <CardContent className="p-4 text-center">
+                    <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg mx-auto mb-2"></div>
+                    <h4 className="text-sm font-semibold text-white mb-1">Manufacturing Systems</h4>
+                    <p className="text-xs text-slate-400">MES, ERP, WMS</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-slate-800/50 border-slate-700">
+                  <CardContent className="p-4 text-center">
+                    <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg mx-auto mb-2"></div>
+                    <h4 className="text-sm font-semibold text-white mb-1">Quality & Lab Systems</h4>
+                    <p className="text-xs text-slate-400">LIMS, QMS, Historians</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-slate-800/50 border-slate-700">
+                  <CardContent className="p-4 text-center">
+                    <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg mx-auto mb-2"></div>
+                    <h4 className="text-sm font-semibold text-white mb-1">IoT & Sensors</h4>
+                    <p className="text-xs text-slate-400">Edge devices, Protocols</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            <div className="flex justify-center mb-8">
+              <div className="w-px h-12 bg-gradient-to-b from-slate-600 to-transparent"></div>
+            </div>
+
+            {/* Open Industrial Hub */}
+            <div className="mb-8">
+              <Card className="bg-gradient-to-br from-blue-500/10 to-purple-600/10 border-blue-500/20 max-w-md mx-auto">
+                <CardContent className="p-8 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Image
+                      src="/open-industrial-icon.svg"
+                      alt="Open Industrial Icon"
+                      width={32}
+                      height={32}
+                      className="w-8 h-8"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-2">Open Industrial</h3>
+                  <p className="text-blue-400 font-semibold mb-4">AI-Powered Hub</p>
+                  <div className="text-sm text-slate-300 space-y-1">
+                    <p>• Real-time ingestion</p>
+                    <p>• Natural language queries</p>
+                    <p>• Instant API generation</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="flex justify-center mb-8">
+              <div className="w-px h-12 bg-gradient-to-b from-transparent to-slate-600"></div>
+            </div>
+
+            {/* Output Destinations */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-6 text-center">Output Destinations</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <Card className="bg-slate-800/50 border-slate-700">
+                  <CardContent className="p-4 text-center">
+                    <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg mx-auto mb-2"></div>
+                    <h4 className="text-sm font-semibold text-white mb-1">Custom Applications</h4>
+                    <p className="text-xs text-slate-400">Web apps, Mobile apps</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-slate-800/50 border-slate-700">
+                  <CardContent className="p-4 text-center">
+                    <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg mx-auto mb-2"></div>
+                    <h4 className="text-sm font-semibold text-white mb-1">Intelligent Agents</h4>
+                    <p className="text-xs text-slate-400">Monitoring, Alerts, Actions</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-slate-800/50 border-slate-700">
+                  <CardContent className="p-4 text-center">
+                    <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg mx-auto mb-2"></div>
+                    <h4 className="text-sm font-semibold text-white mb-1">BI & Analytics Tools</h4>
+                    <p className="text-xs text-slate-400">Power BI, Tableau, Grafana</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-slate-800/50 border-slate-700">
+                  <CardContent className="p-4 text-center">
+                    <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg mx-auto mb-2"></div>
+                    <h4 className="text-sm font-semibold text-white mb-1">APIs & Integrations</h4>
+                    <p className="text-xs text-slate-400">REST APIs, Webhooks</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Benefits */}
+      <section className="py-20 px-4 bg-slate-800/30">
+        <div className="container mx-auto">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <CheckCircle className="w-16 h-16 text-green-400 mx-auto mb-6" />
+              <h3 className="text-xl font-bold text-white mb-4">Universal Connectivity</h3>
+              <p className="text-slate-300 leading-relaxed">
+                Connect any industrial system through standard protocols and APIs
+              </p>
+            </div>
+            <div className="text-center">
+              <Zap className="w-16 h-16 text-yellow-400 mx-auto mb-6" />
+              <h3 className="text-xl font-bold text-white mb-4">Instant Intelligence</h3>
+              <p className="text-slate-300 leading-relaxed">
+                Ask questions in plain English and get immediate, actionable insights
+              </p>
+            </div>
+            <div className="text-center">
+              <Share2 className="w-16 h-16 text-blue-400 mx-auto mb-6" />
+              <h3 className="text-xl font-bold text-white mb-4">Flexible Output</h3>
+              <p className="text-slate-300 leading-relaxed">
+                Share insights as granular API endpoints in any workflow, app, tool or system
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cloud Control */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-6">Your Cloud, Your Rules</h2>
+            <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
+              Run Open Industrial in your Azure tenant for full access and control – or choose from shared cloud or
+              fully managed options.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="flex items-start space-x-4">
+              <KeyIcon className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
+              <p className="text-slate-300">Your data, your access policies</p>
+            </div>
+            <div className="flex items-start space-x-4">
+              <SearchCheckIcon className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
+              <p className="text-slate-300">Full auditability and governance</p>
+            </div>
+            <div className="flex items-start space-x-4">
+              <ShieldIcon className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
+              <p className="text-slate-300">Secure APIs with token-scoped permissions</p>
+            </div>
+            <div className="flex items-start space-x-4">
+              <ZapIcon className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
+              <p className="text-slate-300">Automated, seamless setup</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Future Vision */}
       <section className="py-20 px-4 bg-slate-800/30">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Users className="w-8 h-8 text-white" />
-            </div>
-            <h2 className="text-4xl font-bold text-white mb-6">Who We Serve</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">From Insight to Action</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              We work with OT engineers, process automation leads, lab managers, and industrial IT teams in sectors like
-              manufacturing, life sciences, energy, and utilities — anyone who needs to unify operational data and act
-              on it in real time.
+              Open Industrial is evolving into a modular automation platform with adaptive agents that observe data,
+              trigger workflows, and coordinate logic across systems.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-lg font-semibold text-white mb-2">Manufacturing</h3>
-                <p className="text-slate-400 text-sm">
-                  Unify production line, equipment, and control data to reduce downtime and boost efficiency.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-8">
+              <p className="text-lg text-slate-300 mb-6">Soon, you'll be able to:</p>
+            </div>
 
-            <Card className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-lg font-semibold text-white mb-2">Life Sciences</h3>
-                <p className="text-slate-400 text-sm">
-                  Govern lab and research telemetry to accelerate validation, trials, and compliance.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="space-y-4 mb-12">
+              <div className="flex items-start space-x-4">
+                <CheckCircle className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
+                <p className="text-slate-300">Define schema-aware workflows</p>
+              </div>
+              <div className="flex items-start space-x-4">
+                <CheckCircle className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
+                <p className="text-slate-300">Deploy adaptive agents that monitor, respond, and evolve</p>
+              </div>
+              <div className="flex items-start space-x-4">
+                <CheckCircle className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
+                <p className="text-slate-300">Coordinate action across MES, SCADA, LIMS, and cloud systems</p>
+              </div>
+            </div>
 
-            <Card className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-lg font-semibold text-white mb-2">Energy</h3>
-                <p className="text-slate-400 text-sm">
-                  Balance supply and demand with live grid monitoring, renewable integration, and analytics.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-lg font-semibold text-white mb-2">Utilities</h3>
-                <p className="text-slate-400 text-sm">
-                  Monitor water, infrastructure, and environmental systems with real-time visibility.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-lg font-semibold text-white mb-2">Process Industries</h3>
-                <p className="text-slate-400 text-sm">
-                  Optimize chemical, refining, and continuous manufacturing with integrated operational data.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-slate-900/50 border-slate-700 hover:bg-slate-900/70 transition-colors">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-lg font-semibold text-white mb-2">Industrial IT</h3>
-                <p className="text-slate-400 text-sm">
-                  Bridge OT/IT convergence with secure integration, governance, and system oversight.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="text-center">
+              <Card className="bg-slate-900/50 border-slate-700 inline-block">
+                <CardContent className="p-6">
+                  <p className="text-lg text-white font-medium">
+                    Start with insight. Grow into orchestration. All inside your own stack.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Vision Section */}
-      <section id="vision" className="py-20 px-4 bg-slate-800/30">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Eye className="w-8 h-8 text-white" />
-            </div>
-            <h2 className="text-4xl font-bold text-white mb-6">Our Vision</h2>
-            <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              Industrial data should work as hard as the operations it supports. Open Industrial unifies legacy OT
-              systems with modern tools, giving teams a trusted way to access insights, co-ordinate workflows, and act
-              with confidence.
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <Card className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-600/50 backdrop-blur-sm">
-              <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-white mb-4">The Future of Industrial Intelligence</h3>
-                <p className="text-lg text-white mb-6 leading-relaxed">
-                  Connect your systems. Ask questions in plain English. Act on insights with confidence.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button
-                    size="lg"
-                    className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3"
-                  >
-                    Get Started
-                  </Button>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-slate-600 text-slate-300 hover:bg-slate-800 px-8 py-3 bg-transparent"
-                  >
-                    Learn More
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+      {/* CTA */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto text-center">
+          <h2 className="text-4xl font-bold text-white mb-6">Ready to Unlock Instant Telemetry Insights?</h2>
+          <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
+            Connect, query and act on insights from the plant floor.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3"
+            >
+              Get Started Today
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-slate-600 text-slate-300 hover:bg-slate-800 px-8 py-3 bg-transparent"
+            >
+              Schedule Demo
+            </Button>
           </div>
         </div>
       </section>
