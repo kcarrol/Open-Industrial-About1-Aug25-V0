@@ -5,7 +5,7 @@ import {
   AppWindowIcon,
   KeyIcon,
   ShieldIcon,
-  LucideGripHorizontalIcon,
+  LucideGripHorizontal as LucideGripHorizontalIcon,
   ZapIcon,
   SearchCheckIcon,
   UploadCloudIcon,
@@ -361,7 +361,7 @@ export default function HomePage() {
 
             <Card className="bg-slate-900/50 border-slate-700">
               <CardContent className="p-6 text-center">
-              LucideGripHorizontalIconconalIcon className="w-12 h-12 text-purple-400 mx-auto mb-4" />
+                <LucideGripHorizontalIcon className="w-12 h-12 text-purple-400 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold text-white mb-4">Systems</h3>
                 <div className="space-y-2">
                   <Badge variant="outline" className="border-slate-600 text-slate-300">
