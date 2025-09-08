@@ -21,6 +21,9 @@ export default function BatchQualityPage() {
           </div>
           <nav className="hidden md:flex items-center space-x-6">
             <a href="/" className="text-slate-300 hover:text-white transition-colors">
+              Home
+            </a>
+            <a href="/about" className="text-slate-300 hover:text-white transition-colors">
               About
             </a>
             <a href="/use-case/batch-quality" className="text-white font-medium">

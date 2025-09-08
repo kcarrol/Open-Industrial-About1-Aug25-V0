@@ -22,6 +22,9 @@ export default function ContactPage() {
           </div>
           <nav className="hidden md:flex items-center space-x-6">
             <a href="/" className="text-slate-300 hover:text-white transition-colors">
+              Home
+            </a>
+            <a href="/about" className="text-slate-300 hover:text-white transition-colors">
               About
             </a>
             <a href="/use-case/batch-quality" className="text-slate-300 hover:text-white transition-colors">
@@ -41,15 +44,15 @@ export default function ContactPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-slate-900">
         <div className="container mx-auto text-center">
-          <Badge className="mb-6 bg-blue-500/10 text-blue-400 border-blue-500/20">Contact Us</Badge>
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <Badge className="mb-6 bg-blue-500/20 text-blue-300 border-blue-400/30">Contact Us</Badge>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
               Let's Connect
             </span>
             <br />
-            Your Industrial Data Journey
+            <span className="text-slate-100">Your Industrial Data Journey</span>
           </h1>
           <p className="text-xl text-slate-300 mb-8 max-w-4xl mx-auto leading-relaxed">
             Get in touch to see how Open Industrial unifies your OT systems and delivers insights you can trust.
