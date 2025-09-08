@@ -223,29 +223,33 @@ export default function HomePage() {
       </section>
 
       {/* Turn Industrial Data Into Trusted Insight */}
-      <section id="features" className="py-20 px-4">
+      <section id="features" className="py-12 sm:py-20 px-4 bg-slate-900">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">Turn Industrial Data Into Trusted Insight</h2>
-            <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-100 mb-4 sm:mb-6">
+              Turn Industrial Data Into Trusted Insight
+            </h2>
+            <p className="text-lg sm:text-xl text-slate-200 max-w-4xl mx-auto leading-relaxed">
               Break down data silos across OT and IT systems by turning live plant data into actionable, audit-ready
               insight your teams can act on.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
             <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
-              <CardContent className="p-6 lg:p-8">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-6">
-                  <span className="text-white font-bold">1</span>
+              <CardContent className="p-4 sm:p-6 lg:p-8">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                  <span className="text-white font-bold text-sm sm:text-base">1</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">Downtime Diagnosis & Root Cause</h3>
-                <div className="mb-4">
-                  <Badge className="bg-blue-500/10 text-blue-400 border-blue-500/20 mb-2">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">
+                  Downtime Diagnosis & Root Cause
+                </h3>
+                <div className="mb-3 sm:mb-4">
+                  <Badge className="bg-blue-600/20 text-blue-300 border-blue-400/30 mb-2 text-xs sm:text-sm px-2 py-1">
                     "What caused Line 4 downtime for the past 24 hours?"
                   </Badge>
                 </div>
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
                   Unify SCADA, historian, and PLCs data to diagnose downtime faster. Get clear answers with context —
                   from codes, timing, and trends — without waiting on vendor support or manual analysis.
                 </p>
@@ -253,17 +257,17 @@ export default function HomePage() {
             </Card>
 
             <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
-              <CardContent className="p-6 lg:p-8">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mb-6">
-                  <span className="text-white font-bold">2</span>
+              <CardContent className="p-4 sm:p-6 lg:p-8">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                  <span className="text-white font-bold text-sm sm:text-base">2</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">Batch Quality & Compliance</h3>
-                <div className="mb-4">
-                  <Badge className="bg-green-500/10 text-green-400 border-green-500/20 mb-2">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Batch Quality & Compliance</h3>
+                <div className="mb-3 sm:mb-4">
+                  <Badge className="bg-green-600/20 text-green-300 border-green-400/30 mb-2 text-xs sm:text-sm px-2 py-1">
                     "Which Reactor 2 batches had temp &gt;140°C this week?"
                   </Badge>
                 </div>
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
                   Instantly track and batch across MES, LIMS, and historian data with repeatable, audit-ready queries.
                   Compare the results with expected parameters to document investigations and accelerate investigations.
                 </p>
@@ -271,17 +275,19 @@ export default function HomePage() {
             </Card>
 
             <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
-              <CardContent className="p-6 lg:p-8">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mb-6">
-                  <span className="text-white font-bold">3</span>
+              <CardContent className="p-4 sm:p-6 lg:p-8">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                  <span className="text-white font-bold text-sm sm:text-base">3</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">Cross-Line Performance Reporting</h3>
-                <div className="mb-4">
-                  <Badge className="bg-purple-500/10 text-purple-400 border-purple-500/20 mb-2">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">
+                  Cross-Line Performance Reporting
+                </h3>
+                <div className="mb-3 sm:mb-4">
+                  <Badge className="bg-purple-600/20 text-purple-300 border-purple-400/30 mb-2 text-xs sm:text-sm px-2 py-1">
                     "Show throughput and top 3 downtime causes for Line 4 today."
                   </Badge>
                 </div>
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
                   Generate consistent OEE, yield, and downtime reports across shifts and lines — governed by your plant
                   context, free from spreadsheets and a manual error.
                 </p>
@@ -289,17 +295,17 @@ export default function HomePage() {
             </Card>
 
             <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
-              <CardContent className="p-6 lg:p-8">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mb-6">
-                  <span className="text-white font-bold">4</span>
+              <CardContent className="p-4 sm:p-6 lg:p-8">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                  <span className="text-white font-bold text-sm sm:text-base">4</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">Safety & Compliance Triggers</h3>
-                <div className="mb-4">
-                  <Badge className="bg-orange-500/10 text-orange-400 border-orange-500/20 mb-2">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Safety & Compliance Triggers</h3>
+                <div className="mb-3 sm:mb-4">
+                  <Badge className="bg-orange-600/20 text-orange-300 border-orange-400/30 mb-2 text-xs sm:text-sm px-2 py-1">
                     "Log all pressure events &gt;80psi with full context."
                   </Badge>
                 </div>
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
                   Set rules on safety telemetry and capture incidents with complete historian and SCADA context. Every
                   event logged is a governed, auditable trail to simplify compliance reviews.
                 </p>
@@ -421,7 +427,7 @@ export default function HomePage() {
       </section>
 
       {/* Systems Flow Diagram */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-slate-900">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-6">{"Data In > Insight Out"}</h2>
@@ -434,7 +440,7 @@ export default function HomePage() {
           <div className="max-w-6xl mx-auto">
             {/* Input Systems */}
             <div className="mb-8">
-              <h3 className="text-lg font-semibold text-white mb-6 text-center">Input Systems</h3>
+              <h3 className="text-lg font-semibold text-slate-100 mb-6 text-center">Input Systems</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <Card className="bg-slate-800/50 border-slate-700">
                   <CardContent className="p-4 text-center">
@@ -478,13 +484,13 @@ export default function HomePage() {
             <div className="mb-8">
               <Card className="bg-gradient-to-br from-blue-500/10 to-purple-600/10 border-blue-500/20 max-w-md mx-auto">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
                     <Image
                       src="/open-industrial-icon.svg"
                       alt="Open Industrial Icon"
                       width={32}
                       height={32}
-                      className="w-8 h-8"
+                      className="w-8 h-8 text-white"
                     />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">Open Industrial</h3>
@@ -504,7 +510,7 @@ export default function HomePage() {
 
             {/* Output Destinations */}
             <div>
-              <h3 className="text-lg font-semibold text-white mb-6 text-center">Output Destinations</h3>
+              <h3 className="text-lg font-semibold text-slate-100 mb-6 text-center">Output Destinations</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <Card className="bg-slate-800/50 border-slate-700">
                   <CardContent className="p-4 text-center">
