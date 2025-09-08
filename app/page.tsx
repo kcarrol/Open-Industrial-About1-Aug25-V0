@@ -245,7 +245,7 @@ export default function HomePage() {
                   Downtime Diagnosis & Root Cause
                 </h3>
                 <div className="mb-3 sm:mb-4">
-                  <Badge className="bg-blue-600/20 text-blue-300 border-blue-400/30 mb-2 text-xs sm:text-sm px-2 py-1">
+                  <Badge className="bg-blue-600/20 text-blue-300 border-blue-400/30 mb-2 text-xs sm:text-sm px-3 py-2 whitespace-normal leading-relaxed inline-block w-full">
                     "What caused Line 4 downtime for the past 24 hours?"
                   </Badge>
                 </div>
@@ -263,7 +263,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Batch Quality & Compliance</h3>
                 <div className="mb-3 sm:mb-4">
-                  <Badge className="bg-green-600/20 text-green-300 border-green-400/30 mb-2 text-xs sm:text-sm px-2 py-1">
+                  <Badge className="bg-green-600/20 text-green-300 border-green-400/30 mb-2 text-xs sm:text-sm px-3 py-2 whitespace-normal leading-relaxed inline-block w-full">
                     "Which Reactor 2 batches had temp &gt;140°C this week?"
                   </Badge>
                 </div>
@@ -283,7 +283,7 @@ export default function HomePage() {
                   Cross-Line Performance Reporting
                 </h3>
                 <div className="mb-3 sm:mb-4">
-                  <Badge className="bg-purple-600/20 text-purple-300 border-purple-400/30 mb-2 text-xs sm:text-sm px-2 py-1">
+                  <Badge className="bg-purple-600/20 text-purple-300 border-purple-400/30 mb-2 text-xs sm:text-sm px-3 py-2 whitespace-normal leading-relaxed inline-block w-full">
                     "Show throughput and top 3 downtime causes for Line 4 today."
                   </Badge>
                 </div>
@@ -301,7 +301,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Safety & Compliance Triggers</h3>
                 <div className="mb-3 sm:mb-4">
-                  <Badge className="bg-orange-600/20 text-orange-300 border-orange-400/30 mb-2 text-xs sm:text-sm px-2 py-1">
+                  <Badge className="bg-orange-600/20 text-orange-300 border-orange-400/30 mb-2 text-xs sm:text-sm px-3 py-2 whitespace-normal leading-relaxed inline-block w-full">
                     "Log all pressure events &gt;80psi with full context."
                   </Badge>
                 </div>
