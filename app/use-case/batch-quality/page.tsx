@@ -54,7 +54,7 @@ export default function BatchQualityPage() {
             Compliance
           </h1>
           <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Unify batch data, accelerate investigations, and strengthen audit readiness.
+            Unify MES, LIMS, QMS, and ERP into an explainable, audit-ready query layer for every batch.
           </p>
           <div className="max-w-4xl mx-auto mb-8">
             <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 mb-6">
@@ -77,9 +77,7 @@ export default function BatchQualityPage() {
             </div>
             <h2 className="text-4xl font-bold text-white mb-6">The Problem</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              Batch records are scattered across MES, ERP, LIMS, and QMS systems. Reconciling them for audits or
-              investigations requires manual exports, spreadsheets, and weeks of effort. Deviations may not surface
-              until late, delaying corrective action and increasing compliance risk.
+              Batch records live across MES/EBR, LIMS, QMS, DMS, and ERP. Reconciling them for investigations or audits means exports, spreadsheets, and lost time. Deviations surface late, CAPAs lack full context, and “why is this batch on hold?” becomes a ticket—not an answer.
             </p>
           </div>
         </div>
@@ -91,8 +89,10 @@ export default function BatchQualityPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">System Integration Overview</h2>
             <p className="text-lg text-slate-300 max-w-3xl mx-auto">
-              Open Industrial connects across ERP, MES, QMS, and LIMS to unify the Electronic Batch Record into a
-              governed query layer.
+              Open Industrial connects across ERP, MES, QMS, and LIMS to unify the Electronic Batch Record into a governed query layer. 
+
+What Open Industrial unifies for this use case: Batches &amp; genealogy (MES/EBR), lab samples &amp; test results (LIMS), deviations/CAPAs/changes (QMS), specs/docs/training (DMS), suppliers/material lots (ERP).
+
             </p>
           </div>
           <div className="max-w-6xl mx-auto">
@@ -131,8 +131,7 @@ export default function BatchQualityPage() {
                   <div>
                     <h3 className="text-xl font-bold text-white mb-3">Unify Batch Telemetry</h3>
                     <p className="text-slate-300 leading-relaxed">
-                      Bring together MES, ERP, and LIMS data into a single governed layer — so investigators see the
-                      full context in one place.
+                      Bring MES/EBR, LIMS, QMS, ERP, and DMS into one governed query layer so investigators see the full picture in one place.
                     </p>
                   </div>
                 </div>
@@ -148,8 +147,7 @@ export default function BatchQualityPage() {
                   <div>
                     <h3 className="text-xl font-bold text-white mb-3">Reusable Query Endpoints</h3>
                     <p className="text-slate-300 leading-relaxed">
-                      Expose warm queries that investigators and auditors can reuse — delivering consistent, audit-ready
-                      answers every time.
+                      Save warm queries (e.g., Batches on hold and why, Open CAPAs by product) as explainable, versioned endpoints for repeatable answers.
                     </p>
                   </div>
                 </div>
@@ -163,10 +161,9 @@ export default function BatchQualityPage() {
                     <ArrowRight className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-3">Automated CAPA Integration</h3>
+                    <h3 className="text-xl font-bold text-white mb-3">Automated CAPA Hooks</h3>
                     <p className="text-slate-300 leading-relaxed">
-                      Flag threshold breaches (e.g., temp, pressure) in real time and tie deviations directly to CAPAs —
-                      ensuring no issue slips through.
+                      Flag threshold breaches (temp, pressure, results out-of-spec) and expose them as query signals tied to CAPAs and deviations.
                     </p>
                   </div>
                 </div>
@@ -182,8 +179,7 @@ export default function BatchQualityPage() {
                   <div>
                     <h3 className="text-xl font-bold text-white mb-3">Audit-Ready Reports</h3>
                     <p className="text-slate-300 leading-relaxed">
-                      Generate validated outputs aligned with compliance standards, ready to share with regulators or
-                      internal QA teams.
+                      Generate validated, consistent outputs aligned to your document and data-retention practices — ready for internal QA or regulators.
                     </p>
                   </div>
                 </div>
