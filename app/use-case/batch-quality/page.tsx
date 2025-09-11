@@ -89,11 +89,14 @@ export default function BatchQualityPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">System Integration Overview</h2>
             <p className="text-lg text-slate-300 max-w-3xl mx-auto">
-              Open Industrial connects across ERP, MES, QMS, and LIMS to unify the Electronic Batch Record into a governed query layer. 
+  Open Industrial connects across ERP, MES, QMS, and LIMS to unify the Electronic Batch Record into a governed query layer.
+</p>
 
-What Open Industrial unifies for this use case: Batches &amp; genealogy (MES/EBR), lab samples &amp; test results (LIMS), deviations/CAPAs/changes (QMS), specs/docs/training (DMS), suppliers/material lots (ERP).
-
-            </p>
+<p className="text-lg text-slate-300 max-w-3xl mx-auto mt-4">
+  What Open Industrial unifies for this use case: Batches &amp; genealogy (MES/EBR),
+  lab samples &amp; test results (LIMS), deviations/CAPAs/changes (QMS),
+  specs/docs/training (DMS), suppliers/material lots (ERP).
+</p>
           </div>
           <div className="max-w-6xl mx-auto">
             <Card className="bg-slate-800/50 border-slate-700 overflow-hidden">
