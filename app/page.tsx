@@ -33,22 +33,25 @@ export default function HomePage() {
               className="h-9 w-auto"
             />
           </div>
-          <nav className="hidden md:flex items-center space-x-6">
-            <a href="/" className="text-white font-medium">
+          <nav className="flex items-center space-x-3 sm:space-x-6">
+            <a href="/" className="text-white font-medium text-sm sm:text-base">
               Home
             </a>
-            <a href="/about" className="text-slate-300 hover:text-white transition-colors">
+            <a href="/about" className="text-slate-300 hover:text-white transition-colors text-sm sm:text-base">
               About
             </a>
-            <a href="/use-case/batch-quality" className="text-slate-300 hover:text-white transition-colors">
+            <a
+              href="/use-case/batch-quality"
+              className="text-slate-300 hover:text-white transition-colors text-sm sm:text-base"
+            >
               Use Cases
             </a>
-            <a href="/contact" className="text-slate-300 hover:text-white transition-colors">
+            <a href="/contact" className="text-slate-300 hover:text-white transition-colors text-sm sm:text-base">
               Contact
             </a>
             <Button
               variant="outline"
-              className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white bg-transparent"
+              className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white bg-transparent text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2"
             >
               Get Started
             </Button>
@@ -57,21 +60,18 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-slate-900">
         <div className="container mx-auto text-center">
-          <Badge className="mb-6 bg-blue-500/10 text-blue-400 border-blue-500/20">
+          <Badge className="mb-6 bg-blue-600/20 text-blue-300 border-blue-400/30">
             AI-Powered Industrial Intelligence
           </Badge>
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold text-slate-100 mb-6 leading-tight">
             Ask anything about your plant – <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-              get answers instantly
-            </span>
+            <span className="text-blue-400">get answers instantly</span>
           </h1>
-          <p className="text-lg text-slate-400 mb-8 max-w-3xl mx-auto leading-relaxed">
-            {
-              "Connect industrial systems. Stream telemetry. Ask questions in plain English. Share insights anywhere — no pipelines, no delay."
-            }
+          <p className="text-lg text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Connect industrial systems. Stream telemetry. Ask questions in plain English. Share insights anywhere — no
+            pipelines, no delay.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -83,7 +83,7 @@ export default function HomePage() {
             <Button
               size="lg"
               variant="outline"
-              className="border-slate-600 text-slate-300 hover:bg-slate-800 px-8 py-3 bg-transparent"
+              className="border-slate-600 text-slate-200 hover:bg-slate-800 px-8 py-3 bg-transparent"
             >
               Learn More
             </Button>
@@ -579,32 +579,40 @@ export default function HomePage() {
       </section>
 
       {/* Cloud Control */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-slate-900">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">Your Cloud, Your Rules</h2>
-            <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
+            <h2 className="text-4xl font-bold text-slate-100 mb-6">Your Cloud, Your Rules</h2>
+            <p className="text-xl text-slate-200 max-w-4xl mx-auto leading-relaxed">
               Run Open Industrial in your Azure tenant for full access and control – or choose from shared cloud or
               fully managed options.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 justify-items-center">
-            <div className="flex items-start space-x-4">
-              <KeyIcon className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
-              <p className="text-slate-300">Your data, your access policies</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
+            <div className="flex items-center sm:items-start space-x-4 p-4 sm:p-0">
+              <div className="flex-shrink-0">
+                <KeyIcon className="w-6 h-6 text-green-400" />
+              </div>
+              <p className="text-slate-200 leading-relaxed">Your data, your access policies</p>
             </div>
-            <div className="flex items-start space-x-4">
-              <SearchCheckIcon className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
-              <p className="text-slate-300">Full auditability and governance</p>
+            <div className="flex items-center sm:items-start space-x-4 p-4 sm:p-0">
+              <div className="flex-shrink-0">
+                <SearchCheckIcon className="w-6 h-6 text-green-400" />
+              </div>
+              <p className="text-slate-200 leading-relaxed">Full auditability and governance</p>
             </div>
-            <div className="flex items-start space-x-4">
-              <ShieldIcon className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
-              <p className="text-slate-300">Secure APIs with token-scoped permissions</p>
+            <div className="flex items-center sm:items-start space-x-4 p-4 sm:p-0">
+              <div className="flex-shrink-0">
+                <ShieldIcon className="w-6 h-6 text-green-400" />
+              </div>
+              <p className="text-slate-200 leading-relaxed">Secure APIs with token-scoped permissions</p>
             </div>
-            <div className="flex items-start space-x-4">
-              <ZapIcon className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
-              <p className="text-slate-300">Automated, seamless setup</p>
+            <div className="flex items-center sm:items-start space-x-4 p-4 sm:p-0">
+              <div className="flex-shrink-0">
+                <ZapIcon className="w-6 h-6 text-green-400" />
+              </div>
+              <p className="text-slate-200 leading-relaxed">Automated, seamless setup</p>
             </div>
           </div>
         </div>
@@ -671,7 +679,7 @@ export default function HomePage() {
             <Button
               size="lg"
               variant="outline"
-              className="border-slate-600 text-slate-300 hover:bg-slate-800 px-8 py-3 bg-transparent"
+              className="border-slate-600 text-slate-200 hover:bg-slate-800 px-8 py-3 bg-transparent"
             >
               Schedule Demo
             </Button>
