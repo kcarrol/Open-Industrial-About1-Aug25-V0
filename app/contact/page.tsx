@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { MessageSquare } from "lucide-react"
 import Image from "next/image"
 import HubSpotForm from "@/components/hubspot-form"
+import { MobileNavigation } from "@/components/mobile-navigation"
 
 export default function ContactPage() {
   return (
@@ -36,10 +37,12 @@ export default function ContactPage() {
             <Button
               variant="outline"
               className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white bg-transparent"
+              asChild
             >
-              Get Started
+              <a href="https://www.openindustrial.co/workspace">Get Started</a>
             </Button>
           </nav>
+          <MobileNavigation currentPage="contact" />
         </div>
       </header>
 
@@ -54,7 +57,7 @@ export default function ContactPage() {
             <br />
             <span className="text-slate-100">Your Industrial Data Journey</span>
           </h1>
-          <p className="text-xl text-slate-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-slate-200 mb-8 max-w-4xl mx-auto leading-relaxed">
             Get in touch to see how Open Industrial unifies your OT systems and delivers insights you can trust.
           </p>
         </div>
@@ -98,15 +101,17 @@ export default function ContactPage() {
                   <Button
                     size="lg"
                     className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3"
+                    asChild
                   >
-                    Schedule a Demo
+                    <a href="/contact">Schedule a Demo</a>
                   </Button>
                   <Button
                     variant="outline"
                     size="lg"
                     className="border-slate-600 text-slate-300 hover:bg-slate-800 px-8 py-3 bg-transparent"
+                    asChild
                   >
-                    View Documentation
+                    <a href="https://www.openindustrial.co/docs/">View Documentation</a>
                   </Button>
                 </div>
               </CardContent>

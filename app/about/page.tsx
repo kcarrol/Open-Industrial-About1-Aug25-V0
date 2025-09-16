@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Target, Users, Eye, Zap, MessageSquare, Shield, Workflow } from "lucide-react"
 import Image from "next/image"
+import { MobileNavigation } from "@/components/mobile-navigation"
 
 export default function AboutPage() {
   return (
@@ -19,41 +20,20 @@ export default function AboutPage() {
               className="h-9 w-auto"
             />
           </div>
-          <nav className="hidden md:flex items-center space-x-6">
-            <a href="/" className="text-slate-300 hover:text-white transition-colors">
-              Home
-            </a>
-            <a href="/about" className="text-white font-medium">
-              About
-            </a>
-            <a href="/use-case/batch-quality" className="text-slate-300 hover:text-white transition-colors">
-              Use Cases
-            </a>
-            <a href="/contact" className="text-slate-300 hover:text-white transition-colors">
-              Contact
-            </a>
-            <Button
-              variant="outline"
-              className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white bg-transparent"
-            >
-              Get Started
-            </Button>
-          </nav>
+          <MobileNavigation currentPage="about" />
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-slate-900">
         <div className="container mx-auto text-center">
-          <Badge className="mb-6 bg-blue-500/10 text-blue-400 border-blue-500/20">About Open Industrial</Badge>
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-              Your Industrial Data.
-            </span>
+          <Badge className="mb-6 bg-blue-600/20 text-blue-300 border-blue-400/30">About Open Industrial</Badge>
+          <h1 className="text-5xl md:text-6xl font-bold text-slate-100 mb-6 leading-tight">
+            <span className="text-blue-400">Your Industrial Data.</span>
             <br />
             Unified, Queryable, Actionable.
           </h1>
-          <p className="text-xl text-slate-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-slate-200 mb-8 max-w-4xl mx-auto leading-relaxed">
             Open Industrial is an Azure-powered telemetry hub for operational technology (OT). It ingests data from
             control systems, MES, lab tools, historians, and IoT devices — making it instantly queryable in natural
             language or APIs, and ready for integration into analytics, agents, and automation workflows.
@@ -239,15 +219,17 @@ export default function AboutPage() {
                   <Button
                     size="lg"
                     className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3"
+                    asChild
                   >
-                    Get Started
+                    <a href="https://www.openindustrial.co/workspace">Get Started</a>
                   </Button>
                   <Button
                     size="lg"
                     variant="outline"
                     className="border-slate-600 text-slate-300 hover:bg-slate-800 px-8 py-3 bg-transparent"
+                    asChild
                   >
-                    Learn More
+                    <a href="https://www.openindustrial.co/docs/">Learn More</a>
                   </Button>
                 </div>
               </CardContent>

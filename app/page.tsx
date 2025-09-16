@@ -17,6 +17,7 @@ import {
   Shield,
 } from "lucide-react"
 import Image from "next/image"
+import { MobileNavigation } from "@/components/mobile-navigation"
 
 export default function HomePage() {
   return (
@@ -33,29 +34,7 @@ export default function HomePage() {
               className="h-9 w-auto"
             />
           </div>
-          <nav className="flex items-center space-x-3 sm:space-x-6">
-            <a href="/" className="text-white font-medium text-sm sm:text-base">
-              Home
-            </a>
-            <a href="/about" className="text-slate-300 hover:text-white transition-colors text-sm sm:text-base">
-              About
-            </a>
-            <a
-              href="/use-case/batch-quality"
-              className="text-slate-300 hover:text-white transition-colors text-sm sm:text-base"
-            >
-              Use Cases
-            </a>
-            <a href="/contact" className="text-slate-300 hover:text-white transition-colors text-sm sm:text-base">
-              Contact
-            </a>
-            <Button
-              variant="outline"
-              className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white bg-transparent text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2"
-            >
-              Get Started
-            </Button>
-          </nav>
+          <MobileNavigation currentPage="home" />
         </div>
       </header>
 
@@ -77,15 +56,17 @@ export default function HomePage() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3"
+              asChild
             >
-              Get Started
+              <a href="https://www.openindustrial.co/workspace">Get Started</a>
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-slate-600 text-slate-200 hover:bg-slate-800 px-8 py-3 bg-transparent"
+              asChild
             >
-              Learn More
+              <a href="https://www.openindustrial.co/docs/">Learn More</a>
             </Button>
           </div>
         </div>
@@ -652,7 +633,7 @@ export default function HomePage() {
             <div className="text-center bg-transparent">
               <Card className="bg-slate-900/50 border-slate-700 inline-block">
                 <CardContent className="p-6">
-                  <p className="text-lg text-white font-medium">
+                  <p className="text-lg text-white font-bold">
                     Start with insight. Grow into orchestration. All inside your own stack.
                   </p>
                 </CardContent>
@@ -673,15 +654,17 @@ export default function HomePage() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3"
+              asChild
             >
-              Get Started Today
+              <a href="https://www.openindustrial.co/workspace">Get Started Today</a>
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-slate-600 text-slate-200 hover:bg-slate-800 px-8 py-3 bg-transparent"
+              asChild
             >
-              Schedule Demo
+              <a href="/contact">Schedule Demo</a>
             </Button>
           </div>
         </div>
