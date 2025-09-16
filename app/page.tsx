@@ -44,9 +44,14 @@ export default function HomePage() {
           <Badge className="mb-6 bg-blue-600/20 text-blue-300 border-blue-400/30">
             AI-Powered Industrial Intelligence
           </Badge>
-          <h1 className="text-5xl md:text-6xl font-bold text-slate-100 mb-6 leading-tight">
-            Ask anything about your plant – <br />
-            <span className="text-blue-400">get answers instantly</span>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <span className="text-slate-100 bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] [background-clip:text]">
+              Ask anything about your plant –
+            </span>
+            <br />
+            <span className="text-slate-100 bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] [background-clip:text]">
+              get answers instantly
+            </span>
           </h1>
           <p className="text-lg text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             Connect industrial systems. Stream telemetry. Ask questions in plain English. Share insights anywhere — no
@@ -106,7 +111,7 @@ export default function HomePage() {
       <section id="how-it-works" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">How It Works</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">How It Works</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -207,8 +212,12 @@ export default function HomePage() {
       <section id="features" className="py-12 sm:py-20 px-4 bg-slate-900">
         <div className="container mx-auto">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-100 mb-4 sm:mb-6">
-              Turn Industrial Data Into Trusted Insight
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+                Turn Industrial Data Into
+              </span>
+              <br />
+              <span className="text-slate-100">Trusted Insight</span>
             </h2>
             <p className="text-lg sm:text-xl text-slate-200 max-w-4xl mx-auto leading-relaxed">
               Break down data silos across OT and IT systems by turning live plant data into actionable, audit-ready
@@ -563,7 +572,12 @@ export default function HomePage() {
       <section className="py-20 px-4 bg-slate-900">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-100 mb-6">Your Cloud, Your Rules</h2>
+            <h2 className="text-4xl font-bold mb-6">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+                Your Cloud,
+              </span>
+              <span className="text-slate-100"> Your Rules</span>
+            </h2>
             <p className="text-xl text-slate-200 max-w-4xl mx-auto leading-relaxed">
               Run Open Industrial in your Azure tenant for full access and control – or choose from shared cloud or
               fully managed options.

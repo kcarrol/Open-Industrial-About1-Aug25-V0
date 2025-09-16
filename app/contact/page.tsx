@@ -21,27 +21,7 @@ export default function ContactPage() {
               className="h-9 w-auto"
             />
           </div>
-          <nav className="hidden md:flex items-center space-x-6">
-            <a href="/" className="text-slate-300 hover:text-white transition-colors">
-              Home
-            </a>
-            <a href="/about" className="text-slate-300 hover:text-white transition-colors">
-              About
-            </a>
-            <a href="/use-case/batch-quality" className="text-slate-300 hover:text-white transition-colors">
-              Use Cases
-            </a>
-            <a href="/contact" className="text-white font-medium">
-              Contact
-            </a>
-            <Button
-              variant="outline"
-              className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white bg-transparent"
-              asChild
-            >
-              <a href="https://www.openindustrial.co/workspace">Get Started</a>
-            </Button>
-          </nav>
+          
           <MobileNavigation currentPage="contact" />
         </div>
       </header>
