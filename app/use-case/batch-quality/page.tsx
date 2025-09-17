@@ -213,7 +213,7 @@ export default function BatchQualityPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">Ask Azi</h2>
             <p className="text-lg text-slate-300 max-w-3xl mx-auto">
-              Ask these common batch quality questions in plain English. Toggle to view the underlying KQL query.
+              Ask questions about batch quality in plain English that generate structured queries in KQL to extract unified insights from real-time, large volume telemetry. 
             </p>
           </div>
 
@@ -250,11 +250,11 @@ export default function BatchQualityPage() {
               </CardContent>
             </Card>
 
-            {/* OOS in last 60 days */}
+            {/* OOS in Last 60 Days */}
             <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
-                  <Badge className="bg-orange-500/10 text-orange-400 border-orange-500/20">OOS in last 60 days</Badge>
+                  <Badge className="bg-orange-500/10 text-orange-400 border-orange-500/20">OOS in Last 60 Days</Badge>
                   <div className="flex bg-slate-700 rounded-md p-1">
                     <button
                       onClick={() => setToggleStates((prev) => ({ ...prev, oos: "English" }))}
@@ -280,11 +280,11 @@ export default function BatchQualityPage() {
               </CardContent>
             </Card>
 
-            {/* Calibration impact */}
+            {/* Calibration Impact */}
             <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
-                  <Badge className="bg-purple-500/10 text-purple-400 border-purple-500/20">Calibration impact</Badge>
+                  <Badge className="bg-purple-500/10 text-purple-400 border-purple-500/20">Calibration Impact</Badge>
                   <div className="flex bg-slate-700 rounded-md p-1">
                     <button
                       onClick={() => setToggleStates((prev) => ({ ...prev, calibration: "English" }))}
@@ -314,11 +314,11 @@ export default function BatchQualityPage() {
               </CardContent>
             </Card>
 
-            {/* Quarantined lots */}
+            {/* Quarantined Lots */}
             <Card className="bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-colors">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
-                  <Badge className="bg-red-500/10 text-red-400 border-red-500/20">Quarantined lots</Badge>
+                  <Badge className="bg-red-500/10 text-red-400 border-red-500/20">Quarantined Lots</Badge>
                   <div className="flex bg-slate-700 rounded-md p-1">
                     <button
                       onClick={() => setToggleStates((prev) => ({ ...prev, quarantined: "English" }))}

@@ -72,7 +72,7 @@ export default function ContactPage() {
           <div className="max-w-4xl mx-auto">
             <Card className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-600/50 backdrop-blur-sm">
               <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-white mb-4">Let's Get Started</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Let&#39;s get started</h3>
                 <p className="text-lg text-white mb-6 leading-relaxed">
                   Join industrial teams who trust Open Industrial to unify their operational data and drive actionable
                   insights.
