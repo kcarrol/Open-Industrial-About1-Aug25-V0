@@ -544,21 +544,21 @@ export default function HomePage() {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <CheckCircle className="w-16 h-16 text-green-400 mx-auto mb-6" />
+              <CheckCircle className="w-16 h-16 text-green-500 to-emerald-600 mx-auto mb-6" />
               <h3 className="text-xl font-bold text-white mb-4">Universal Connectivity</h3>
               <p className="text-slate-300 leading-relaxed">
                 Connect any industrial system through standard protocols and APIs
               </p>
             </div>
             <div className="text-center">
-              <Zap className="w-16 h-16 text-yellow-400 mx-auto mb-6" />
+              <Zap className="w-16 h-16 text-blue-500 to-purple-600 mx-auto mb-6" />
               <h3 className="text-xl font-bold text-white mb-4">Instant Intelligence</h3>
               <p className="text-slate-300 leading-relaxed">
                 Ask questions in plain English and get immediate, actionable insights
               </p>
             </div>
             <div className="text-center">
-              <Share2 className="w-16 h-16 text-blue-400 mx-auto mb-6" />
+              <Share2 className="w-16 h-16 text-orange-500 to-red-600 mx-auto mb-6" />
               <h3 className="text-xl font-bold text-white mb-4">Flexible Output</h3>
               <p className="text-slate-300 leading-relaxed">
                 Share insights as granular API endpoints in any workflow, app, tool or system
