@@ -56,10 +56,10 @@ export default function BatchQualityPage() {
       {/* Hero Section */}
       <section className="py-20 px-4 bg-slate-900">
         <div className="container mx-auto text-center">
-          <Badge className="mb-6 bg-purple-500/10 text-purple-400 border-purple-500/20">Use Case</Badge>
+          <Badge className="mb-6 bg-purple-500/30 text-purple-200 border-purple-400/40">Use Case</Badge>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-              Batch quality and compliance   
+            <span className="text-slate-100 bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] [background-clip:text]">
+              Batch quality and compliance
             </span>
             <br />
           </h1>
@@ -96,7 +96,7 @@ export default function BatchQualityPage() {
       </section>
 
       {/* System Architecture Diagram */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-slate-800/30">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">System integration overview</h2>
@@ -105,17 +105,26 @@ export default function BatchQualityPage() {
               governed query layer.
             </p>
 
-            <p className="text-lg text-slate-300 max-w-3xl mx-auto mt-4">
-              This use case unifies: Batches &amp; genealogy (MES/EBR), lab samples &amp; test results (LIMS),
-              deviations/CAPAs/changes (QMS), specs/docs/training (DMS), suppliers/material lots (ERP).
-            </p>
+            <div className="text-lg text-slate-300 max-w-3xl mx-auto mt-4">
+              <p className="mb-3 text-left">This use case unifies:</p>
+              <div className="text-left">
+                <ul className="list-disc list-inside space-y-2 mb-10">
+                  <li>Batches & genealogy (MES/EBR)</li>
+                  <li>Lab samples & test results (LIMS)</li>
+                  <li>Deviations/CAPAs/changes (QMS)</li>
+                  <li>Specs/docs/training (DMS)</li>
+                  <li>Suppliers/material lots (ERP)</li>
+                </ul>
+              </div>
+            </div>
           </div>
+
           <div className="max-w-6xl mx-auto">
             <Card className="bg-slate-800/50 border-slate-700 overflow-hidden">
               <CardContent className="p-8">
                 <Image
-                  src="/batch-reporting-diagram.png"
-                  alt="Batch Quality System Architecture"
+                  src="/azi-industrial-dashboard.png"
+                  alt="Azi Natural Language Prompting"
                   width={1200}
                   height={800}
                   className="w-full h-auto rounded-lg"
@@ -212,9 +221,11 @@ export default function BatchQualityPage() {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 mb-4">
-            Ask batch quality questions in natural language</h2>
+              Ask batch quality questions in natural language
+            </h2>
             <p className="text-lg text-slate-300 max-w-3xl mx-auto">
-              Ask Azi – our AI query assistant – questions about batch quality in plain English. Azi generates structured queries in KQL to extract unified insights from real-time, large volume telemetry. 
+              Ask Azi – our AI query assistant – questions about batch quality in plain English. Azi generates
+              structured queries in KQL to extract unified insights from real-time, large volume telemetry.
             </p>
           </div>
 
@@ -360,7 +371,7 @@ export default function BatchQualityPage() {
               <CheckCircle className="w-8 h-8 text-white" />
             </div>
             <h2 className="text-4xl font-bold text-white mb-6">The outcome</h2>
-            <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-slate-200 max-w-4xl mx-auto leading-relaxed">
               Faster investigations, proactive compliance, and traceability you can trust — with every batch deviation
               mapped, explained, and connected to corrective actions.
             </p>

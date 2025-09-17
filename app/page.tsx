@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
 import {
   AppWindowIcon,
   KeyIcon,
@@ -26,13 +27,15 @@ export default function HomePage() {
       <header className="border-b border-slate-700/50 bg-slate-900/80 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center">
-            <Image
-              src="/favicon-openindustrial.svg"
-              alt="Open Industrial"
-              width={200}
-              height={36}
-              className="h-9 w-auto"
-            />
+            <Link href="/">
+              <Image
+                src="/favicon-openindustrial.svg"
+                alt="Open Industrial"
+                width={200}
+                height={36}
+                className="h-9 w-auto cursor-pointer"
+              />
+            </Link>
           </div>
           <MobileNavigation currentPage="home" />
         </div>
@@ -41,7 +44,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="py-20 px-4 bg-slate-900">
         <div className="container mx-auto text-center">
-          <Badge className="mb-6 bg-purple-500/10 text-purple-400 border-purple-500/20">
+          <Badge className="mb-6 bg-purple-500/30 text-purple-200 border-purple-400/40">
             AI-Powered Industrial Intelligence
           </Badge>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
@@ -214,10 +217,9 @@ export default function HomePage() {
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-                Turn industrial data into trusted insight  
+                Turn industrial data into trusted insight
               </span>
               <br />
-              
             </h2>
             <p className="text-lg sm:text-xl text-slate-200 max-w-4xl mx-auto leading-relaxed">
               Break down data silos across OT and IT systems by turning live plant data into actionable, audit-ready
@@ -574,9 +576,8 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-                Your cloud, your rules 
+                Your cloud, your rules
               </span>
-              
             </h2>
             <p className="text-xl text-slate-200 max-w-4xl mx-auto leading-relaxed">
               Run Open Industrial in your Azure tenant for full access and control – or choose from shared cloud or
@@ -689,24 +690,26 @@ export default function HomePage() {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
-              <Image
-                src="/favicon-openindustrial.svg"
-                alt="Open Industrial"
-                width={200}
-                height={36}
-                className="h-9 w-auto"
-              />
+              <Link href="/">
+                <Image
+                  src="/favicon-openindustrial.svg"
+                  alt="Open Industrial"
+                  width={200}
+                  height={36}
+                  className="h-9 w-auto cursor-pointer"
+                />
+              </Link>
             </div>
             <div className="flex items-center space-x-6">
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              <Link href="/privacy" className="text-slate-400 hover:text-white transition-colors">
                 Privacy
-              </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              </Link>
+              <Link href="/terms" className="text-slate-400 hover:text-white transition-colors">
                 Terms
-              </a>
-              <a href="/contact" className="text-slate-400 hover:text-white transition-colors">
+              </Link>
+              <Link href="/contact" className="text-slate-400 hover:text-white transition-colors">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-slate-700 text-center text-slate-400">
