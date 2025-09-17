@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { AlertTriangle, Database, CheckCircle, ArrowRight } from "lucide-react"
+import { AlertTriangle, HelpingHandIcon, CheckCircle, ArrowRight } from "lucide-react"
 import Image from "next/image"
 import { MobileNavigation } from "@/components/mobile-navigation"
 import { useState } from "react"
@@ -85,7 +85,7 @@ export default function BatchQualityPage() {
             <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <AlertTriangle className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-4xl font-bold text-white mb-6">The Problem</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">The problem</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
               Batch records live across MES/EBR, LIMS, QMS, DMS, and ERP. Reconciling them for investigations or audits
               means exports, spreadsheets, and lost time. Deviations surface late, CAPAs lack full context, and "why is
@@ -99,7 +99,7 @@ export default function BatchQualityPage() {
       <section className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">System Integration Overview</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">System integration overview</h2>
             <p className="text-lg text-slate-300 max-w-3xl mx-auto">
               Open Industrial connects across ERP, MES, QMS, and LIMS to unify the Electronic Batch Record into a
               governed query layer.
@@ -131,9 +131,9 @@ export default function BatchQualityPage() {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Database className="w-8 h-8 text-white" />
+              <HelpingHandIcon className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-4xl font-bold text-white mb-6">How Open Industrial Helps</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">How Open Industrial helps</h2>
           </div>
 
           <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
@@ -211,9 +211,9 @@ export default function BatchQualityPage() {
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">What You Can Ask</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Ask Azi</h2>
             <p className="text-lg text-slate-300 max-w-3xl mx-auto">
-              Try these common batch quality queries in plain English. Toggle to view the underlying KQL.
+              Ask these common batch quality questions in plain English. Toggle to view the underlying KQL query.
             </p>
           </div>
 
@@ -358,7 +358,7 @@ export default function BatchQualityPage() {
             <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <CheckCircle className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-4xl font-bold text-white mb-6">The Outcome</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">The outcome</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
               Faster investigations, proactive compliance, and traceability you can trust — with every batch deviation
               mapped, explained, and connected to corrective actions.
@@ -368,7 +368,7 @@ export default function BatchQualityPage() {
           <div className="max-w-4xl mx-auto">
             <Card className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-600/50 backdrop-blur-sm">
               <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-white mb-4">Ready to Transform Your Batch Quality Process?</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Ready to transform your batch quality process?</h3>
                 <p className="text-lg text-white mb-6 leading-relaxed">
                   Connect your systems. Query your data. Act with confidence.
                 </p>

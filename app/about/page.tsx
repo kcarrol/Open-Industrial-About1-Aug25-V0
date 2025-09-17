@@ -50,7 +50,7 @@ export default function AboutPage() {
             <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <Target className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-4xl font-bold text-white mb-6">Our Mission</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">Our mission</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
               To help industrial teams unify data across systems, access insights without delay, and coordinate actions
               across the systems that keep operations running.
@@ -63,7 +63,7 @@ export default function AboutPage() {
       <section id="what-we-do" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">What We Do</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">What we do</h2>
             <p className="text-lg text-slate-300 max-w-3xl mx-auto">
               Open Industrial transforms how organizations interact with their industrial data through four core
               capabilities.
@@ -129,7 +129,7 @@ export default function AboutPage() {
             <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <Users className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-4xl font-bold text-white mb-6">Who We Serve</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">Who we serve</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
               We work with OT engineers, process automation leads, lab managers, and industrial IT teams in sectors like
               manufacturing, life sciences, energy, and utilities — anyone who needs to unify operational data and act
@@ -202,7 +202,7 @@ export default function AboutPage() {
             <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <Eye className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-4xl font-bold text-white mb-6">Our Vision</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">Our vision</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
               Industrial data should work as hard as the operations it supports. Open Industrial unifies legacy OT
               systems with modern tools, giving teams a trusted way to access insights, co-ordinate workflows, and act
@@ -213,7 +213,7 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto">
             <Card className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-slate-600/50 backdrop-blur-sm">
               <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-white mb-4">The Future of Industrial Intelligence</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">The future of industrial intelligence</h3>
                 <p className="text-lg text-white mb-6 leading-relaxed">
                   Connect your systems. Ask questions in plain English. Act on insights with confidence.
                 </p>

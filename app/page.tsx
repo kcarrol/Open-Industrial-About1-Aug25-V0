@@ -472,7 +472,7 @@ export default function HomePage() {
 
             {/* Open Industrial Hub */}
             <div className="mb-8">
-              <Card className="bg-gradient-to-br from-blue-500/10 to-purple-600/10 border-blue-500/20 max-w-md mx-auto">
+              <Card className="bg-gradient-to-br from-blue-400 to-purple-500 max-w-md mx-auto">
                 <CardContent className="p-8 text-center">
                   <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
                     <Image
@@ -574,9 +574,9 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-                Your Cloud,
+                Your cloud, your rules 
               </span>
-              <span className="text-slate-100"> Your Rules</span>
+              
             </h2>
             <p className="text-xl text-slate-200 max-w-4xl mx-auto leading-relaxed">
               Run Open Industrial in your Azure tenant for full access and control – or choose from shared cloud or
@@ -617,7 +617,7 @@ export default function HomePage() {
       <section className="py-20 px-4 bg-slate-800/30">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">From Insight to Action</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">From insight to action</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
               Open Industrial is evolving into a modular automation platform with adaptive agents that observe data,
               trigger workflows, and coordinate logic across systems.
@@ -660,7 +660,7 @@ export default function HomePage() {
       {/* CTA */}
       <section className="py-20 px-4">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Ready to Unlock Instant Telemetry Insights?</h2>
+          <h2 className="text-4xl font-bold text-white mb-6">Ready to unlock instant telemetry insights?</h2>
           <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
             Connect, query and act on insights from the plant floor.
           </p>
