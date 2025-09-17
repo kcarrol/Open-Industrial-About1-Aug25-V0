@@ -211,9 +211,10 @@ export default function BatchQualityPage() {
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">Ask Azi</h2>
+            <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 mb-4">
+            Ask batch quality questions in natural language</h2>
             <p className="text-lg text-slate-300 max-w-3xl mx-auto">
-              Ask questions about batch quality in plain English that generate structured queries in KQL to extract unified insights from real-time, large volume telemetry. 
+              Ask Azi – our AI query assistant – questions about batch quality in plain English. Azi generates structured queries in KQL to extract unified insights from real-time, large volume telemetry. 
             </p>
           </div>
 
