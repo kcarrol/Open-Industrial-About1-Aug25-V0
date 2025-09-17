@@ -5,6 +5,7 @@ import { MessageSquare } from "lucide-react"
 import Image from "next/image"
 import HubSpotForm from "@/components/hubspot-form"
 import { MobileNavigation } from "@/components/mobile-navigation"
+import Link from "next/link"
 
 export default function ContactPage() {
   return (
@@ -21,7 +22,7 @@ export default function ContactPage() {
               className="h-9 w-auto"
             />
           </div>
-          
+
           <MobileNavigation currentPage="contact" />
         </div>
       </header>
@@ -35,7 +36,6 @@ export default function ContactPage() {
               Let&#39;s connect
             </span>
             <br />
-            
           </h1>
           <p className="text-xl text-slate-200 mb-8 max-w-4xl mx-auto leading-relaxed">
             Let's discuss how Open Industrial unifies your OT systems and delivers insights you can trust.
@@ -114,15 +114,15 @@ export default function ContactPage() {
               />
             </div>
             <div className="flex items-center space-x-6">
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              <Link href="/privacy" className="text-slate-400 hover:text-white transition-colors">
                 Privacy
-              </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              </Link>
+              <Link href="/terms" className="text-slate-400 hover:text-white transition-colors">
                 Terms
-              </a>
-              <a href="/" className="text-slate-400 hover:text-white transition-colors">
+              </Link>
+              <Link href="/about" className="text-slate-400 hover:text-white transition-colors">
                 About
-              </a>
+              </Link>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-slate-700 text-center text-slate-400">

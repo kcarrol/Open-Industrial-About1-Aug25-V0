@@ -7,6 +7,7 @@ import { AlertTriangle, HelpingHandIcon, CheckCircle, ArrowRight } from "lucide-
 import Image from "next/image"
 import { MobileNavigation } from "@/components/mobile-navigation"
 import { useState } from "react"
+import Link from "next/link"
 
 export default function BatchQualityPage() {
   const [toggleStates, setToggleStates] = useState({
@@ -421,15 +422,15 @@ export default function BatchQualityPage() {
               />
             </div>
             <div className="flex items-center space-x-6">
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              <Link href="/privacy" className="text-slate-400 hover:text-white transition-colors">
                 Privacy
-              </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              </Link>
+              <Link href="/terms" className="text-slate-400 hover:text-white transition-colors">
                 Terms
-              </a>
-              <a href="/contact" className="text-slate-400 hover:text-white transition-colors">
+              </Link>
+              <Link href="/contact" className="text-slate-400 hover:text-white transition-colors">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-slate-700 text-center text-slate-400">

@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Target, Users, Eye, Zap, MessageSquare, Shield, Workflow } from "lucide-react"
 import Image from "next/image"
 import { MobileNavigation } from "@/components/mobile-navigation"
+import Link from "next/link"
 
 export default function AboutPage() {
   return (
@@ -30,10 +31,9 @@ export default function AboutPage() {
           <Badge className="mb-6 bg-purple-500/10 text-purple-400 border-purple-500/20">About Open Industrial</Badge>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-              Your industrial data – unified, queryable, actionable   
+              Your industrial data – unified, queryable, actionable
             </span>
             <br />
-            
           </h1>
           <p className="text-xl text-slate-200 mb-8 max-w-4xl mx-auto leading-relaxed">
             Open Industrial is an Azure-powered telemetry hub for operational technology (OT). It ingests data from
@@ -254,15 +254,15 @@ export default function AboutPage() {
               />
             </div>
             <div className="flex items-center space-x-6">
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              <Link href="/privacy" className="text-slate-400 hover:text-white transition-colors">
                 Privacy
-              </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              </Link>
+              <Link href="/terms" className="text-slate-400 hover:text-white transition-colors">
                 Terms
-              </a>
-              <a href="/contact" className="text-slate-400 hover:text-white transition-colors">
+              </Link>
+              <Link href="/contact" className="text-slate-400 hover:text-white transition-colors">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-slate-700 text-center text-slate-400">
