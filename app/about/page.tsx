@@ -30,10 +30,10 @@ export default function AboutPage() {
           <Badge className="mb-6 bg-blue-600/20 text-blue-300 border-blue-400/30">About Open Industrial</Badge>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-              Your Industrial Data.
+              Your industrial data – unified, queryable, actionable   
             </span>
             <br />
-            <span className="text-slate-100">Unified, Queryable, Actionable.</span>
+            
           </h1>
           <p className="text-xl text-slate-200 mb-8 max-w-4xl mx-auto leading-relaxed">
             Open Industrial is an Azure-powered telemetry hub for operational technology (OT). It ingests data from

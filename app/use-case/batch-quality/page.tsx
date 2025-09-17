@@ -59,10 +59,9 @@ export default function BatchQualityPage() {
           <Badge className="mb-6 bg-purple-500/10 text-purple-400 border-purple-500/20">Use Case</Badge>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-              Batch Quality &
+              Batch quality and compliance   
             </span>
             <br />
-            Compliance
           </h1>
           <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             Unify MES, LIMS, QMS, and ERP into an explainable, audit-ready query layer for every batch.

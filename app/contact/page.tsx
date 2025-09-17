@@ -32,13 +32,13 @@ export default function ContactPage() {
           <Badge className="mb-6 bg-blue-500/20 text-blue-300 border-blue-400/30">Contact Us</Badge>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-              Let's Connect
+              Let&#39;s connect
             </span>
             <br />
-            <span className="text-slate-100">Your Industrial Data Journey</span>
+            
           </h1>
           <p className="text-xl text-slate-200 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Get in touch to see how Open Industrial unifies your OT systems and delivers insights you can trust.
+            Let's discuss how Open Industrial unifies your OT systems and delivers insights you can trust.
           </p>
         </div>
       </section>

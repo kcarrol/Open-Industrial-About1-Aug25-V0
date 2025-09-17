@@ -99,7 +99,7 @@ export default function HomePage() {
       {/* Value Proposition */}
       <section className="py-20 px-4 bg-slate-800/30">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Connect Your Data. Ask Anything. Share Anywhere.</h2>
+          <h2 className="text-4xl font-bold text-white mb-6">Connect your data. Ask anything. Share anywhere.</h2>
           <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
             Open Industrial ingests live telemetry from DCS, SCADA, MES, historians, and lab systems — making it
             instantly queryable through natural language, APIs, and dashboards.
@@ -111,7 +111,7 @@ export default function HomePage() {
       <section id="how-it-works" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">How It Works</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">How it works</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -159,7 +159,7 @@ export default function HomePage() {
       <section className="py-20 px-4 bg-slate-800/30">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">Meet Azi — Your AI Query Assistant</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">Meet Azi — your AI query assistant</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
               Azi gives engineers direct access to live plant insights — no scripts, no SQL, no waiting on IT or vendor
               support.
@@ -214,10 +214,10 @@ export default function HomePage() {
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-                Turn Industrial Data Into
+                Turn industrial data into trusted insight  
               </span>
               <br />
-              <span className="text-slate-100">Trusted Insight</span>
+              
             </h2>
             <p className="text-lg sm:text-xl text-slate-200 max-w-4xl mx-auto leading-relaxed">
               Break down data silos across OT and IT systems by turning live plant data into actionable, audit-ready
@@ -309,7 +309,7 @@ export default function HomePage() {
       <section id="integration" className="py-20 px-4 bg-slate-800/30">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">Works with Your Existing Stack</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">Works with your existing stack</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
               Connect seamlessly to your current industrial systems.
             </p>
@@ -420,7 +420,7 @@ export default function HomePage() {
       <section className="py-20 px-4 bg-slate-900">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">{"Data In > Insight Out"}</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">{"Data in > Insight out"}</h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
               The unified intelligence hub for your industrial ecosystem.
             </p>
