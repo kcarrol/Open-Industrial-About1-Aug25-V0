@@ -54,7 +54,7 @@ export default function BatchQualityPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-slate-900">
         <div className="container mx-auto text-center">
           <Badge className="mb-6 bg-purple-500/10 text-purple-400 border-purple-500/20">Use Case</Badge>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">

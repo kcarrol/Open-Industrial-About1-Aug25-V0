@@ -27,7 +27,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="py-20 px-4 bg-slate-900">
         <div className="container mx-auto text-center">
-          <Badge className="mb-6 bg-blue-600/20 text-blue-300 border-blue-400/30">About Open Industrial</Badge>
+          <Badge className="mb-6 bg-purple-500/10 text-purple-400 border-purple-500/20">About Open Industrial</Badge>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
               Your industrial data – unified, queryable, actionable   

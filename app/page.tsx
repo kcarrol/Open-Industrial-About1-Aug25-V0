@@ -41,7 +41,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="py-20 px-4 bg-slate-900">
         <div className="container mx-auto text-center">
-          <Badge className="mb-6 bg-blue-600/20 text-blue-300 border-blue-400/30">
+          <Badge className="mb-6 bg-purple-500/10 text-purple-400 border-purple-500/20">
             AI-Powered Industrial Intelligence
           </Badge>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
